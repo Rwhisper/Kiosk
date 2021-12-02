@@ -8,8 +8,8 @@ namespace KIOSK
 {
     class Item
     {
-        string itemName;
-        int price;
-        int count;
+        public string ItemName { get; set; }
+        public int Price { get; set; }
+        public int Count { get; set; }
     }
 }

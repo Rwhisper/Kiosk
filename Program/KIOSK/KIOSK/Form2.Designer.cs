@@ -284,11 +284,11 @@ namespace KIOSK
             this.label12.AutoSize = true;
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label12.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(166, 465);
+            this.label12.Location = new System.Drawing.Point(172, 465);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(67, 13);
+            this.label12.Size = new System.Drawing.Size(55, 13);
             this.label12.TabIndex = 25;
-            this.label12.Text = "자몽에이드";
+            this.label12.Text = "카푸치노";
             // 
             // label11
             // 
@@ -296,11 +296,11 @@ namespace KIOSK
             this.label11.AutoSize = true;
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label11.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(33, 465);
+            this.label11.Location = new System.Drawing.Point(39, 465);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(67, 13);
+            this.label11.Size = new System.Drawing.Size(55, 13);
             this.label11.TabIndex = 24;
-            this.label11.Text = "자몽에이드";
+            this.label11.Text = "카페모카";
             // 
             // label10
             // 
@@ -308,11 +308,11 @@ namespace KIOSK
             this.label10.AutoSize = true;
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(432, 465);
+            this.label10.Location = new System.Drawing.Point(411, 465);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 13);
+            this.label10.Size = new System.Drawing.Size(109, 13);
             this.label10.TabIndex = 23;
-            this.label10.Text = "자몽에이드";
+            this.label10.Text = "화이트 초콜릿 모카";
             // 
             // label9
             // 
@@ -320,11 +320,11 @@ namespace KIOSK
             this.label9.AutoSize = true;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(299, 465);
+            this.label9.Location = new System.Drawing.Point(297, 465);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 13);
+            this.label9.Size = new System.Drawing.Size(70, 13);
             this.label9.TabIndex = 22;
-            this.label9.Text = "자몽에이드";
+            this.label9.Text = "토피넛 라떼";
             // 
             // coffeePtBox1
             // 
@@ -336,7 +336,7 @@ namespace KIOSK
             this.coffeePtBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox1.TabIndex = 2;
             this.coffeePtBox1.TabStop = false;
-            this.coffeePtBox1.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.coffeePtBox1.Click += new System.EventHandler(this.coffeePtBox1_Click);
             // 
             // coffeePtBox2
             // 
@@ -348,6 +348,7 @@ namespace KIOSK
             this.coffeePtBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox2.TabIndex = 3;
             this.coffeePtBox2.TabStop = false;
+            this.coffeePtBox2.Click += new System.EventHandler(this.coffeePtBox2_Click);
             // 
             // coffeePtBox3
             // 
@@ -359,6 +360,7 @@ namespace KIOSK
             this.coffeePtBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox3.TabIndex = 4;
             this.coffeePtBox3.TabStop = false;
+            this.coffeePtBox3.Click += new System.EventHandler(this.coffeePtBox3_Click);
             // 
             // coffeePtBox4
             // 
@@ -374,7 +376,7 @@ namespace KIOSK
             // coffeePtBox6
             // 
             this.coffeePtBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox6.Image = global::KIOSK.Properties.Resources.tea1;
+            this.coffeePtBox6.Image = global::KIOSK.Properties.Resources.바닐라_크림_콜드_브루_removebg_preview;
             this.coffeePtBox6.Location = new System.Drawing.Point(136, 166);
             this.coffeePtBox6.Name = "coffeePtBox6";
             this.coffeePtBox6.Size = new System.Drawing.Size(127, 119);
@@ -385,7 +387,7 @@ namespace KIOSK
             // coffeePtBox7
             // 
             this.coffeePtBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox7.Image = global::KIOSK.Properties.Resources.tea1;
+            this.coffeePtBox7.Image = global::KIOSK.Properties.Resources.아이스_돌체라떼_removebg_preview;
             this.coffeePtBox7.Location = new System.Drawing.Point(269, 166);
             this.coffeePtBox7.Name = "coffeePtBox7";
             this.coffeePtBox7.Size = new System.Drawing.Size(127, 119);
@@ -396,18 +398,19 @@ namespace KIOSK
             // coffeePtBox8
             // 
             this.coffeePtBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox8.Image = global::KIOSK.Properties.Resources.tea1;
+            this.coffeePtBox8.Image = global::KIOSK.Properties.Resources.콜드_브루_removebg_preview;
             this.coffeePtBox8.Location = new System.Drawing.Point(402, 166);
             this.coffeePtBox8.Name = "coffeePtBox8";
             this.coffeePtBox8.Size = new System.Drawing.Size(127, 119);
             this.coffeePtBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox8.TabIndex = 9;
             this.coffeePtBox8.TabStop = false;
+            this.coffeePtBox8.Click += new System.EventHandler(this.coffeePtBox8_Click);
             // 
             // coffeePtBox9
             // 
             this.coffeePtBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox9.Image = global::KIOSK.Properties.Resources.tea1;
+            this.coffeePtBox9.Image = global::KIOSK.Properties.Resources.카페모카_removebg_preview;
             this.coffeePtBox9.Location = new System.Drawing.Point(3, 329);
             this.coffeePtBox9.Name = "coffeePtBox9";
             this.coffeePtBox9.Size = new System.Drawing.Size(127, 119);
@@ -418,7 +421,7 @@ namespace KIOSK
             // coffeePtBox10
             // 
             this.coffeePtBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox10.Image = global::KIOSK.Properties.Resources.tea1;
+            this.coffeePtBox10.Image = global::KIOSK.Properties.Resources.카푸치노_removebg_preview;
             this.coffeePtBox10.Location = new System.Drawing.Point(136, 329);
             this.coffeePtBox10.Name = "coffeePtBox10";
             this.coffeePtBox10.Size = new System.Drawing.Size(127, 119);
@@ -429,7 +432,7 @@ namespace KIOSK
             // coffeePtBox11
             // 
             this.coffeePtBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox11.Image = global::KIOSK.Properties.Resources.tea1;
+            this.coffeePtBox11.Image = global::KIOSK.Properties.Resources.아이스_토피_넛_라떼_removebg_preview;
             this.coffeePtBox11.Location = new System.Drawing.Point(269, 329);
             this.coffeePtBox11.Name = "coffeePtBox11";
             this.coffeePtBox11.Size = new System.Drawing.Size(127, 119);
@@ -440,7 +443,7 @@ namespace KIOSK
             // pictureBox12
             // 
             this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox12.Image = global::KIOSK.Properties.Resources.tea1;
+            this.pictureBox12.Image = global::KIOSK.Properties.Resources.아이스_화이트_초콜릿_모카_removebg_preview;
             this.pictureBox12.Location = new System.Drawing.Point(402, 329);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(127, 119);
@@ -451,7 +454,7 @@ namespace KIOSK
             // coffeePtBox5
             // 
             this.coffeePtBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox5.Image = global::KIOSK.Properties.Resources.tea1;
+            this.coffeePtBox5.Image = global::KIOSK.Properties.Resources.돌체_콜드_브루_removebg_preview;
             this.coffeePtBox5.Location = new System.Drawing.Point(3, 166);
             this.coffeePtBox5.Name = "coffeePtBox5";
             this.coffeePtBox5.Size = new System.Drawing.Size(127, 119);
@@ -470,7 +473,6 @@ namespace KIOSK
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "아메리카노";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -495,7 +497,6 @@ namespace KIOSK
             this.label3.Size = new System.Drawing.Size(67, 13);
             this.label3.TabIndex = 16;
             this.label3.Text = "바닐라라떼";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -507,7 +508,7 @@ namespace KIOSK
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 13);
             this.label4.TabIndex = 17;
-            this.label4.Text = "자몽에이드";
+            this.label4.Text = "에스프레소";
             // 
             // label5
             // 
@@ -515,11 +516,11 @@ namespace KIOSK
             this.label5.AutoSize = true;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(33, 300);
+            this.label5.Location = new System.Drawing.Point(24, 300);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 13);
+            this.label5.Size = new System.Drawing.Size(85, 13);
             this.label5.TabIndex = 18;
-            this.label5.Text = "자몽에이드";
+            this.label5.Text = "돌체 콜드 브루";
             // 
             // label6
             // 
@@ -527,11 +528,11 @@ namespace KIOSK
             this.label6.AutoSize = true;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(166, 300);
+            this.label6.Location = new System.Drawing.Point(137, 300);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 13);
+            this.label6.Size = new System.Drawing.Size(124, 13);
             this.label6.TabIndex = 19;
-            this.label6.Text = "자몽에이드";
+            this.label6.Text = "바닐라 크림 콜드 브루";
             // 
             // label7
             // 
@@ -539,11 +540,11 @@ namespace KIOSK
             this.label7.AutoSize = true;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(299, 300);
+            this.label7.Location = new System.Drawing.Point(303, 300);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 13);
+            this.label7.Size = new System.Drawing.Size(58, 13);
             this.label7.TabIndex = 20;
-            this.label7.Text = "자몽에이드";
+            this.label7.Text = "돌체 라떼";
             // 
             // label8
             // 
@@ -551,11 +552,11 @@ namespace KIOSK
             this.label8.AutoSize = true;
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(432, 300);
+            this.label8.Location = new System.Drawing.Point(437, 300);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 13);
+            this.label8.Size = new System.Drawing.Size(58, 13);
             this.label8.TabIndex = 21;
-            this.label8.Text = "자몽에이드";
+            this.label8.Text = "콜드 브루";
             // 
             // tapAde
             // 
@@ -676,7 +677,7 @@ namespace KIOSK
             // aidPtBox2
             // 
             this.aidPtBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox2.Image = global::KIOSK.Properties.Resources.tea1;
+            this.aidPtBox2.Image = global::KIOSK.Properties.Resources.쿨_라임_피지오_removebg_preview;
             this.aidPtBox2.Location = new System.Drawing.Point(136, 3);
             this.aidPtBox2.Name = "aidPtBox2";
             this.aidPtBox2.Size = new System.Drawing.Size(127, 119);
@@ -687,7 +688,7 @@ namespace KIOSK
             // aidPtBox3
             // 
             this.aidPtBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox3.Image = global::KIOSK.Properties.Resources.tea1;
+            this.aidPtBox3.Image = global::KIOSK.Properties.Resources.스노우_민트_초콜릿_블렌디드_removebg_preview;
             this.aidPtBox3.Location = new System.Drawing.Point(269, 3);
             this.aidPtBox3.Name = "aidPtBox3";
             this.aidPtBox3.Size = new System.Drawing.Size(127, 119);
@@ -698,7 +699,7 @@ namespace KIOSK
             // aidPtBox4
             // 
             this.aidPtBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox4.Image = global::KIOSK.Properties.Resources.tea1;
+            this.aidPtBox4.Image = global::KIOSK.Properties.Resources.피치_레몬_블렌디드_removebg_preview;
             this.aidPtBox4.Location = new System.Drawing.Point(402, 3);
             this.aidPtBox4.Name = "aidPtBox4";
             this.aidPtBox4.Size = new System.Drawing.Size(127, 119);
@@ -709,7 +710,7 @@ namespace KIOSK
             // aidPtBox5
             // 
             this.aidPtBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox5.Image = global::KIOSK.Properties.Resources.tea1;
+            this.aidPtBox5.Image = global::KIOSK.Properties.Resources.패션_탱고_티_레모네이드_피지오_removebg_preview;
             this.aidPtBox5.Location = new System.Drawing.Point(3, 166);
             this.aidPtBox5.Name = "aidPtBox5";
             this.aidPtBox5.Size = new System.Drawing.Size(127, 119);
@@ -720,7 +721,7 @@ namespace KIOSK
             // aidPtBox6
             // 
             this.aidPtBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox6.Image = global::KIOSK.Properties.Resources.tea1;
+            this.aidPtBox6.Image = global::KIOSK.Properties.Resources.블랙_티_레모네이드_피지오_removebg_preview;
             this.aidPtBox6.Location = new System.Drawing.Point(136, 166);
             this.aidPtBox6.Name = "aidPtBox6";
             this.aidPtBox6.Size = new System.Drawing.Size(127, 119);
@@ -731,7 +732,7 @@ namespace KIOSK
             // aidPtBox7
             // 
             this.aidPtBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox7.Image = global::KIOSK.Properties.Resources.tea1;
+            this.aidPtBox7.Image = global::KIOSK.Properties.Resources.딸기_딜라이트_요거트_블렌디드_removebg_preview;
             this.aidPtBox7.Location = new System.Drawing.Point(269, 166);
             this.aidPtBox7.Name = "aidPtBox7";
             this.aidPtBox7.Size = new System.Drawing.Size(127, 119);
@@ -742,7 +743,7 @@ namespace KIOSK
             // aidPtBox8
             // 
             this.aidPtBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox8.Image = global::KIOSK.Properties.Resources.tea1;
+            this.aidPtBox8.Image = global::KIOSK.Properties.Resources.민트_초콜릿_칩_블렌디드_removebg_preview;
             this.aidPtBox8.Location = new System.Drawing.Point(402, 166);
             this.aidPtBox8.Name = "aidPtBox8";
             this.aidPtBox8.Size = new System.Drawing.Size(127, 119);
@@ -812,11 +813,11 @@ namespace KIOSK
             this.label14.AutoSize = true;
             this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label14.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(166, 137);
+            this.label14.Location = new System.Drawing.Point(157, 137);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(67, 13);
+            this.label14.Size = new System.Drawing.Size(85, 13);
             this.label14.TabIndex = 16;
-            this.label14.Text = "자몽에이드";
+            this.label14.Text = "쿨 라임 피지오";
             // 
             // label15
             // 
@@ -824,11 +825,11 @@ namespace KIOSK
             this.label15.AutoSize = true;
             this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label15.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(299, 137);
+            this.label15.Location = new System.Drawing.Point(272, 137);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(67, 13);
+            this.label15.Size = new System.Drawing.Size(121, 13);
             this.label15.TabIndex = 17;
-            this.label15.Text = "자몽에이드";
+            this.label15.Text = "민트 초콜릿 블렌디드";
             // 
             // label16
             // 
@@ -836,11 +837,11 @@ namespace KIOSK
             this.label16.AutoSize = true;
             this.label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label16.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(432, 137);
+            this.label16.Location = new System.Drawing.Point(411, 137);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(67, 13);
+            this.label16.Size = new System.Drawing.Size(109, 13);
             this.label16.TabIndex = 18;
-            this.label16.Text = "자몽에이드";
+            this.label16.Text = "피치 레몬 블렌디드";
             // 
             // label17
             // 
@@ -848,11 +849,11 @@ namespace KIOSK
             this.label17.AutoSize = true;
             this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label17.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(33, 300);
+            this.label17.Location = new System.Drawing.Point(12, 300);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(67, 13);
+            this.label17.Size = new System.Drawing.Size(109, 13);
             this.label17.TabIndex = 19;
-            this.label17.Text = "자몽에이드";
+            this.label17.Text = "패션 티 레모네이드";
             // 
             // label18
             // 
@@ -860,11 +861,11 @@ namespace KIOSK
             this.label18.AutoSize = true;
             this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label18.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(166, 300);
+            this.label18.Location = new System.Drawing.Point(145, 300);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(67, 13);
+            this.label18.Size = new System.Drawing.Size(109, 13);
             this.label18.TabIndex = 20;
-            this.label18.Text = "자몽에이드";
+            this.label18.Text = "블랙 티 레모네이드";
             // 
             // label19
             // 
@@ -872,11 +873,11 @@ namespace KIOSK
             this.label19.AutoSize = true;
             this.label19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label19.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.Location = new System.Drawing.Point(299, 300);
+            this.label19.Location = new System.Drawing.Point(272, 300);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(67, 13);
+            this.label19.Size = new System.Drawing.Size(121, 13);
             this.label19.TabIndex = 21;
-            this.label19.Text = "자몽에이드";
+            this.label19.Text = "딸기 딜라이트 요거트";
             // 
             // label20
             // 
@@ -884,11 +885,11 @@ namespace KIOSK
             this.label20.AutoSize = true;
             this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label20.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(432, 300);
+            this.label20.Location = new System.Drawing.Point(405, 300);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(67, 13);
+            this.label20.Size = new System.Drawing.Size(121, 13);
             this.label20.TabIndex = 22;
-            this.label20.Text = "자몽에이드";
+            this.label20.Text = "민트 초코칩 블렌디드";
             // 
             // tabSmoo
             // 
@@ -995,7 +996,7 @@ namespace KIOSK
             // sfPtBox1
             // 
             this.sfPtBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sfPtBox1.Image = global::KIOSK.Properties.Resources.tea1;
+            this.sfPtBox1.Image = global::KIOSK.Properties.Resources.모카_프라푸치노_removebg_preview;
             this.sfPtBox1.Location = new System.Drawing.Point(3, 3);
             this.sfPtBox1.Name = "sfPtBox1";
             this.sfPtBox1.Size = new System.Drawing.Size(127, 119);
@@ -1006,7 +1007,7 @@ namespace KIOSK
             // sfPtBox2
             // 
             this.sfPtBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sfPtBox2.Image = global::KIOSK.Properties.Resources.tea1;
+            this.sfPtBox2.Image = global::KIOSK.Properties.Resources.자바칩프라푸치노_removebg_preview;
             this.sfPtBox2.Location = new System.Drawing.Point(136, 3);
             this.sfPtBox2.Name = "sfPtBox2";
             this.sfPtBox2.Size = new System.Drawing.Size(127, 119);
@@ -1017,7 +1018,7 @@ namespace KIOSK
             // sfPtBox3
             // 
             this.sfPtBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sfPtBox3.Image = global::KIOSK.Properties.Resources.tea1;
+            this.sfPtBox3.Image = global::KIOSK.Properties.Resources.초콜릿_크림칩_프라푸치노_removebg_preview;
             this.sfPtBox3.Location = new System.Drawing.Point(269, 3);
             this.sfPtBox3.Name = "sfPtBox3";
             this.sfPtBox3.Size = new System.Drawing.Size(127, 119);
@@ -1028,7 +1029,7 @@ namespace KIOSK
             // pictureBox4
             // 
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Image = global::KIOSK.Properties.Resources.tea1;
+            this.pictureBox4.Image = global::KIOSK.Properties.Resources.화이트_타이거_프라푸치노_removebg_preview;
             this.pictureBox4.Location = new System.Drawing.Point(402, 3);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(127, 119);
@@ -1131,11 +1132,11 @@ namespace KIOSK
             this.label25.AutoSize = true;
             this.label25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label25.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label25.Location = new System.Drawing.Point(33, 137);
+            this.label25.Location = new System.Drawing.Point(19, 137);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(67, 13);
+            this.label25.Size = new System.Drawing.Size(94, 13);
             this.label25.TabIndex = 16;
-            this.label25.Text = "자몽에이드";
+            this.label25.Text = "모카 프라푸치노";
             // 
             // label26
             // 
@@ -1143,11 +1144,11 @@ namespace KIOSK
             this.label26.AutoSize = true;
             this.label26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label26.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(166, 137);
+            this.label26.Location = new System.Drawing.Point(146, 137);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(67, 13);
+            this.label26.Size = new System.Drawing.Size(106, 13);
             this.label26.TabIndex = 17;
-            this.label26.Text = "자몽에이드";
+            this.label26.Text = "자바칩 프라푸치노";
             // 
             // label27
             // 
@@ -1155,11 +1156,11 @@ namespace KIOSK
             this.label27.AutoSize = true;
             this.label27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label27.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label27.Location = new System.Drawing.Point(299, 137);
+            this.label27.Location = new System.Drawing.Point(279, 137);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(67, 13);
+            this.label27.Size = new System.Drawing.Size(106, 13);
             this.label27.TabIndex = 18;
-            this.label27.Text = "자몽에이드";
+            this.label27.Text = "초코칩 프라푸치노";
             // 
             // label28
             // 
@@ -1167,11 +1168,11 @@ namespace KIOSK
             this.label28.AutoSize = true;
             this.label28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label28.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label28.Location = new System.Drawing.Point(432, 137);
+            this.label28.Location = new System.Drawing.Point(413, 137);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(67, 13);
+            this.label28.Size = new System.Drawing.Size(106, 13);
             this.label28.TabIndex = 19;
-            this.label28.Text = "자몽에이드";
+            this.label28.Text = "타이거 프라푸치노";
             // 
             // label29
             // 
@@ -1281,11 +1282,11 @@ namespace KIOSK
             this.label48.AutoSize = true;
             this.label48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label48.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label48.Location = new System.Drawing.Point(166, 465);
+            this.label48.Location = new System.Drawing.Point(157, 465);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(67, 13);
+            this.label48.Size = new System.Drawing.Size(85, 13);
             this.label48.TabIndex = 39;
-            this.label48.Text = "자몽에이드";
+            this.label48.Text = "제주 유기 녹차";
             // 
             // label47
             // 
@@ -1293,11 +1294,11 @@ namespace KIOSK
             this.label47.AutoSize = true;
             this.label47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label47.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label47.Location = new System.Drawing.Point(33, 465);
+            this.label47.Location = new System.Drawing.Point(4, 465);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(67, 13);
+            this.label47.Size = new System.Drawing.Size(125, 13);
             this.label47.TabIndex = 38;
-            this.label47.Text = "자몽에이드";
+            this.label47.Text = "자몽 허니 블랙 티 Hot";
             // 
             // label46
             // 
@@ -1305,11 +1306,11 @@ namespace KIOSK
             this.label46.AutoSize = true;
             this.label46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label46.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label46.Location = new System.Drawing.Point(432, 465);
+            this.label46.Location = new System.Drawing.Point(423, 465);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(67, 13);
+            this.label46.Size = new System.Drawing.Size(85, 13);
             this.label46.TabIndex = 37;
-            this.label46.Text = "자몽에이드";
+            this.label46.Text = "패션 프루트 티";
             // 
             // label45
             // 
@@ -1317,16 +1318,16 @@ namespace KIOSK
             this.label45.AutoSize = true;
             this.label45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label45.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label45.Location = new System.Drawing.Point(299, 465);
+            this.label45.Location = new System.Drawing.Point(272, 465);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(67, 13);
+            this.label45.Size = new System.Drawing.Size(121, 13);
             this.label45.TabIndex = 36;
-            this.label45.Text = "자몽에이드";
+            this.label45.Text = "캐모마일 블랜디드 티";
             // 
             // teaPtBox1
             // 
             this.teaPtBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox1.Image = global::KIOSK.Properties.Resources.tea1;
+            this.teaPtBox1.Image = global::KIOSK.Properties.Resources.라임_패션_티_removebg_preview;
             this.teaPtBox1.Location = new System.Drawing.Point(3, 3);
             this.teaPtBox1.Name = "teaPtBox1";
             this.teaPtBox1.Size = new System.Drawing.Size(127, 119);
@@ -1337,7 +1338,7 @@ namespace KIOSK
             // teaPtBox2
             // 
             this.teaPtBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox2.Image = global::KIOSK.Properties.Resources.tea1;
+            this.teaPtBox2.Image = global::KIOSK.Properties.Resources.아이스_민트_블렌드_티_removebg_preview;
             this.teaPtBox2.Location = new System.Drawing.Point(136, 3);
             this.teaPtBox2.Name = "teaPtBox2";
             this.teaPtBox2.Size = new System.Drawing.Size(127, 119);
@@ -1348,7 +1349,7 @@ namespace KIOSK
             // teaPtBox3
             // 
             this.teaPtBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox3.Image = global::KIOSK.Properties.Resources.tea1;
+            this.teaPtBox3.Image = global::KIOSK.Properties.Resources.아이스_얼_그레이_티_removebg_preview;
             this.teaPtBox3.Location = new System.Drawing.Point(269, 3);
             this.teaPtBox3.Name = "teaPtBox3";
             this.teaPtBox3.Size = new System.Drawing.Size(127, 119);
@@ -1359,7 +1360,7 @@ namespace KIOSK
             // teaPtBox4
             // 
             this.teaPtBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox4.Image = global::KIOSK.Properties.Resources.tea1;
+            this.teaPtBox4.Image = global::KIOSK.Properties.Resources.아이스_유스베리_티_removebg_preview;
             this.teaPtBox4.Location = new System.Drawing.Point(402, 3);
             this.teaPtBox4.Name = "teaPtBox4";
             this.teaPtBox4.Size = new System.Drawing.Size(127, 119);
@@ -1370,7 +1371,7 @@ namespace KIOSK
             // teaPtBox5
             // 
             this.teaPtBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox5.Image = global::KIOSK.Properties.Resources.tea1;
+            this.teaPtBox5.Image = global::KIOSK.Properties.Resources.아이스_유자_민트_티_removebg_preview;
             this.teaPtBox5.Location = new System.Drawing.Point(3, 166);
             this.teaPtBox5.Name = "teaPtBox5";
             this.teaPtBox5.Size = new System.Drawing.Size(127, 119);
@@ -1381,7 +1382,7 @@ namespace KIOSK
             // teaPtBox6
             // 
             this.teaPtBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox6.Image = global::KIOSK.Properties.Resources.tea1;
+            this.teaPtBox6.Image = global::KIOSK.Properties.Resources.아이스_자몽_허니_블랙_티_removebg_preview;
             this.teaPtBox6.Location = new System.Drawing.Point(136, 166);
             this.teaPtBox6.Name = "teaPtBox6";
             this.teaPtBox6.Size = new System.Drawing.Size(127, 119);
@@ -1392,7 +1393,7 @@ namespace KIOSK
             // teaPtBox7
             // 
             this.teaPtBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox7.Image = global::KIOSK.Properties.Resources.tea1;
+            this.teaPtBox7.Image = global::KIOSK.Properties.Resources.아이스_제주_카멜리아_티_removebg_preview;
             this.teaPtBox7.Location = new System.Drawing.Point(269, 166);
             this.teaPtBox7.Name = "teaPtBox7";
             this.teaPtBox7.Size = new System.Drawing.Size(127, 119);
@@ -1403,7 +1404,7 @@ namespace KIOSK
             // teaPtBox8
             // 
             this.teaPtBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox8.Image = global::KIOSK.Properties.Resources.tea1;
+            this.teaPtBox8.Image = global::KIOSK.Properties.Resources.아이스_푸를_청귤_민트_티_removebg_preview;
             this.teaPtBox8.Location = new System.Drawing.Point(402, 166);
             this.teaPtBox8.Name = "teaPtBox8";
             this.teaPtBox8.Size = new System.Drawing.Size(127, 119);
@@ -1414,7 +1415,7 @@ namespace KIOSK
             // teaPtBox9
             // 
             this.teaPtBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox9.Image = global::KIOSK.Properties.Resources.tea1;
+            this.teaPtBox9.Image = global::KIOSK.Properties.Resources.자몽_허니_블랙_티_removebg_preview__1_;
             this.teaPtBox9.Location = new System.Drawing.Point(3, 329);
             this.teaPtBox9.Name = "teaPtBox9";
             this.teaPtBox9.Size = new System.Drawing.Size(127, 119);
@@ -1425,7 +1426,7 @@ namespace KIOSK
             // teaPtBox10
             // 
             this.teaPtBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox10.Image = global::KIOSK.Properties.Resources.tea1;
+            this.teaPtBox10.Image = global::KIOSK.Properties.Resources.제주_유기_녹차_removebg_preview;
             this.teaPtBox10.Location = new System.Drawing.Point(136, 329);
             this.teaPtBox10.Name = "teaPtBox10";
             this.teaPtBox10.Size = new System.Drawing.Size(127, 119);
@@ -1436,7 +1437,7 @@ namespace KIOSK
             // teaPtBox11
             // 
             this.teaPtBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox11.Image = global::KIOSK.Properties.Resources.tea1;
+            this.teaPtBox11.Image = global::KIOSK.Properties.Resources.캐모마일_블렌드_티_removebg_preview;
             this.teaPtBox11.Location = new System.Drawing.Point(269, 329);
             this.teaPtBox11.Name = "teaPtBox11";
             this.teaPtBox11.Size = new System.Drawing.Size(127, 119);
@@ -1447,7 +1448,7 @@ namespace KIOSK
             // teaPtBox12
             // 
             this.teaPtBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox12.Image = global::KIOSK.Properties.Resources.tea1;
+            this.teaPtBox12.Image = global::KIOSK.Properties.Resources.패션_프루트_티_removebg_preview;
             this.teaPtBox12.Location = new System.Drawing.Point(402, 329);
             this.teaPtBox12.Name = "teaPtBox12";
             this.teaPtBox12.Size = new System.Drawing.Size(127, 119);
@@ -1461,11 +1462,11 @@ namespace KIOSK
             this.label37.AutoSize = true;
             this.label37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label37.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label37.Location = new System.Drawing.Point(33, 137);
+            this.label37.Location = new System.Drawing.Point(30, 137);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(67, 13);
+            this.label37.Size = new System.Drawing.Size(73, 13);
             this.label37.TabIndex = 28;
-            this.label37.Text = "자몽에이드";
+            this.label37.Text = "라임 패션 티";
             // 
             // label38
             // 
@@ -1473,11 +1474,11 @@ namespace KIOSK
             this.label38.AutoSize = true;
             this.label38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label38.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label38.Location = new System.Drawing.Point(166, 137);
+            this.label38.Location = new System.Drawing.Point(151, 137);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(67, 13);
+            this.label38.Size = new System.Drawing.Size(97, 13);
             this.label38.TabIndex = 29;
-            this.label38.Text = "자몽에이드";
+            this.label38.Text = "민트 블렌디드 티";
             // 
             // label39
             // 
@@ -1485,11 +1486,11 @@ namespace KIOSK
             this.label39.AutoSize = true;
             this.label39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label39.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label39.Location = new System.Drawing.Point(299, 137);
+            this.label39.Location = new System.Drawing.Point(297, 137);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(67, 13);
+            this.label39.Size = new System.Drawing.Size(70, 13);
             this.label39.TabIndex = 30;
-            this.label39.Text = "자몽에이드";
+            this.label39.Text = "얼그레이 티";
             // 
             // label40
             // 
@@ -1497,11 +1498,11 @@ namespace KIOSK
             this.label40.AutoSize = true;
             this.label40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label40.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label40.Location = new System.Drawing.Point(432, 137);
+            this.label40.Location = new System.Drawing.Point(431, 137);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(67, 13);
+            this.label40.Size = new System.Drawing.Size(70, 13);
             this.label40.TabIndex = 31;
-            this.label40.Text = "자몽에이드";
+            this.label40.Text = "유스베리 티";
             // 
             // label41
             // 
@@ -1509,11 +1510,11 @@ namespace KIOSK
             this.label41.AutoSize = true;
             this.label41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label41.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label41.Location = new System.Drawing.Point(33, 300);
+            this.label41.Location = new System.Drawing.Point(30, 300);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(67, 13);
+            this.label41.Size = new System.Drawing.Size(73, 13);
             this.label41.TabIndex = 32;
-            this.label41.Text = "자몽에이드";
+            this.label41.Text = "유자 민트 티";
             // 
             // label42
             // 
@@ -1521,11 +1522,11 @@ namespace KIOSK
             this.label42.AutoSize = true;
             this.label42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label42.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label42.Location = new System.Drawing.Point(166, 300);
+            this.label42.Location = new System.Drawing.Point(149, 300);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(67, 13);
+            this.label42.Size = new System.Drawing.Size(100, 13);
             this.label42.TabIndex = 33;
-            this.label42.Text = "자몽에이드";
+            this.label42.Text = "자몽 허니 블랙 티";
             // 
             // label43
             // 
@@ -1533,11 +1534,11 @@ namespace KIOSK
             this.label43.AutoSize = true;
             this.label43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label43.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label43.Location = new System.Drawing.Point(299, 300);
+            this.label43.Location = new System.Drawing.Point(284, 300);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(67, 13);
+            this.label43.Size = new System.Drawing.Size(97, 13);
             this.label43.TabIndex = 34;
-            this.label43.Text = "자몽에이드";
+            this.label43.Text = "제주 카멜리아 티";
             // 
             // label44
             // 
@@ -1545,11 +1546,11 @@ namespace KIOSK
             this.label44.AutoSize = true;
             this.label44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label44.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label44.Location = new System.Drawing.Point(432, 300);
+            this.label44.Location = new System.Drawing.Point(416, 300);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(67, 13);
+            this.label44.Size = new System.Drawing.Size(100, 13);
             this.label44.TabIndex = 35;
-            this.label44.Text = "자몽에이드";
+            this.label44.Text = "푸를 청귤 민트 티";
             // 
             // orderBtn
             // 
@@ -1599,6 +1600,7 @@ namespace KIOSK
             this.orderDGView.RowTemplate.Height = 25;
             this.orderDGView.Size = new System.Drawing.Size(430, 169);
             this.orderDGView.TabIndex = 5;
+            this.orderDGView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.orderDGView_CellContentClick);
             // 
             // productName
             // 
