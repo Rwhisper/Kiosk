@@ -13,7 +13,7 @@ namespace KIOSK
     public partial class Form2 : Form
     {
 
-        Dictionary<int, Item> _items = new Dictionary<int, Item>(); 
+        //Dictionary<int, Item> _items = new Dictionary<int, Item>(); 
         public Form2()
         {
             InitializeComponent();
@@ -57,154 +57,192 @@ namespace KIOSK
         }
         private void SelectItem(int i)
         {
-            string s;
-            int price;
+            Item item = new Item();
+                       
             switch (i)
             {
                 case 1:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 2:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "카페라떼";
+                    item.Price = 3000;
                     break;
                 case 3:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 4:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 5:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 6:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 7:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 8:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 9:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 10:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 11:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 12:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 13:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
-                case 14:s = "아메리카노";
-                    price = 2500;
+                case 14:
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 15:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 16:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 17:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 18:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 19:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 20:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 21:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 22:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 23:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 case 24:
-                    s = "아메리카노";
-                    price = 2500;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
                 default:
-                    s = "";
-                    price = 0;
+                    item.ItemName = "아메리카노";
+                    item.Price = 2500;
                     break;
             }
+            SearchAndAdd(item);
 
-            if (_items.ContainsKey(i))
-            {
-                if (_items.TryGetValue(i, out Item item))
-                {
-                    item.Price += price;
-                    item.Count += 1;
-                }               
-            }
-            else
-            {
-                Item item = new Item();
-                item.ItemName = s;
-                item.Price = price;
-                item.Count = 1;
-                item.ItemName = "아메리카노";
-                _items.Add(i, item);
-                MessageBox.Show("추가 완료");
-            }
-            AddDataInTable();
+            //if (_items.ContainsKey(i))
+            //{
+            //    if (_items.TryGetValue(i, out Item item))
+            //    {
+            //        item.Price += price;
+            //        item.Count += 1;
+            //    }               
+            //}
+            //else
+            //{
+            //    Item item = new Item();
+            //    item.ItemName = s;
+            //    item.Price = price;
+            //    item.Count = 1;
+            //    item.ItemName = "아메리카노";
+            //    _items.Add(i, item);
+            //    MessageBox.Show("추가 완료");
+            //    AddDataInTable();
+            //}
+
         }
+      
+        /// <summary>
+        /// GridView에서 아이템을 검색해서 존재하면 
+        /// </summary>
+        /// <param name="item"></param>
+        private void SearchAndAdd(Item item)
+        {
+            if (this.orderDGView.RowCount != 0)
+            {
+                for (int i = 0; i < this.orderDGView.RowCount; i++)
+                {
+                    if(orderDGView.Rows[i].Cells[0].Value != null)
+                    {
+                        MessageBox.Show(orderDGView.Rows[i].Cells[0].Value.ToString());
+                        if (orderDGView.Rows[i].Cells[0].Value.ToString() == item.ItemName)
+                        {
+                            int price = 0;
+                            int count = 0;
+                            price = Convert.ToInt32(orderDGView.Rows[i].Cells[1].Value);
+                            count = Convert.ToInt32(orderDGView.Rows[i].Cells[2].Value);
+
+                            orderDGView.Rows[i].Cells[1].Value = price + item.Price;
+                            orderDGView.Rows[i].Cells[2].Value = count + 1;
+                            return;
+                        }
+                    }                    
+                }
+            }
+           
+            orderDGView.Rows.Add(item.ItemName, item.Price, 1);
+
+        }
+        //private void AddDataInTable()
+        //{
+
+        //    //DataTable table = new DataTable();
+        //    //table. = orderDGView.Columns;
+        //    foreach(Item i in _items.Values)
+        //    {
+        //        MessageBox.Show("여기까지 됨" + i.ItemName +  i.Price + i.Count);
+        //        orderDGView.Rows.Add(i.ItemName, i.Price, i.Count);
+        //    }
+        //    //orderDGView.DataSource = table;
+
+        //}
         private void coffeePtBox1_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("아메리카노를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("아메리카노를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 SelectItem(1);
-            }            
-        }
-        private void AddDataInTable()
-        {
-            
-            DataTable table = new DataTable();
-            foreach(Item i in _items.Values)
-            {
-                MessageBox.Show("여기까지 됨" + i.ItemName +  i.Price + i.Count);
-                table.Rows.Add(i.ItemName, i.Price, i.Count);
             }
-            orderDGView.DataSource = table;
-
         }
-
         private void coffeePtBox2_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("카페라떼를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(2);
+            }
         }
         private void coffeePtBox3_Click(object sender, EventArgs e)
         {

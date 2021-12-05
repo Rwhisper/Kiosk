@@ -45,9 +45,10 @@ namespace KIOSK
             this.closeBtn.FlatAppearance.BorderSize = 0;
             this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.closeBtn.Location = new System.Drawing.Point(570, 1);
+            this.closeBtn.Location = new System.Drawing.Point(733, 1);
+            this.closeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.closeBtn.Name = "closeBtn";
-            this.closeBtn.Size = new System.Drawing.Size(30, 25);
+            this.closeBtn.Size = new System.Drawing.Size(39, 33);
             this.closeBtn.TabIndex = 0;
             this.closeBtn.Text = "X";
             this.closeBtn.UseVisualStyleBackColor = false;
@@ -56,33 +57,35 @@ namespace KIOSK
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(171)))), ((int)(((byte)(245)))));
-            this.panel1.Location = new System.Drawing.Point(-1, -2);
+            this.panel1.Location = new System.Drawing.Point(-1, -3);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(604, 31);
+            this.panel1.Size = new System.Drawing.Size(777, 41);
             this.panel1.TabIndex = 1;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::KIOSK.Properties.Resources.제목을_입력해주세요__001__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 27);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(604, 804);
+            this.pictureBox1.Size = new System.Drawing.Size(777, 1072);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(600, 820);
+            this.ClientSize = new System.Drawing.Size(771, 1093);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
