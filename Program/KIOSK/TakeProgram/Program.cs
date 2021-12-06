@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace KIOSK
+namespace TakeProgram
 {
     static class Program
     {
@@ -18,7 +18,6 @@ namespace KIOSK
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            
         }
     }
 }

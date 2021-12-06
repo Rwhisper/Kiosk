@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KIOSK
 {
-    class Item
+    public class Item
     {
         public string ItemName { get; set; }
         public int Price { get; set; }

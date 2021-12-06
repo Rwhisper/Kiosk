@@ -46,7 +46,7 @@ namespace KIOSK
             this.coffeePtBox9 = new System.Windows.Forms.PictureBox();
             this.coffeePtBox10 = new System.Windows.Forms.PictureBox();
             this.coffeePtBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.coffeePtBox12 = new System.Windows.Forms.PictureBox();
             this.coffeePtBox5 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -140,9 +140,13 @@ namespace KIOSK
             this.orderDGView = new System.Windows.Forms.DataGridView();
             this.productName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.add = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.del = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label49 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.delBtn = new System.Windows.Forms.Button();
+            this.sumPriceLbl = new System.Windows.Forms.Label();
             this.tabCtrl.SuspendLayout();
             this.tabCoffee.SuspendLayout();
             this.coffeePanel.SuspendLayout();
@@ -156,7 +160,7 @@ namespace KIOSK
             ((System.ComponentModel.ISupportInitialize)(this.coffeePtBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coffeePtBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coffeePtBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coffeePtBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coffeePtBox5)).BeginInit();
             this.tapAde.SuspendLayout();
             this.aidPanel.SuspendLayout();
@@ -253,7 +257,7 @@ namespace KIOSK
             this.coffeePanel.Controls.Add(this.coffeePtBox9, 0, 4);
             this.coffeePanel.Controls.Add(this.coffeePtBox10, 1, 4);
             this.coffeePanel.Controls.Add(this.coffeePtBox11, 2, 4);
-            this.coffeePanel.Controls.Add(this.pictureBox12, 3, 4);
+            this.coffeePanel.Controls.Add(this.coffeePtBox12, 3, 4);
             this.coffeePanel.Controls.Add(this.coffeePtBox5, 0, 2);
             this.coffeePanel.Controls.Add(this.label1, 0, 1);
             this.coffeePanel.Controls.Add(this.label2, 1, 1);
@@ -276,7 +280,6 @@ namespace KIOSK
             this.coffeePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.coffeePanel.Size = new System.Drawing.Size(533, 492);
             this.coffeePanel.TabIndex = 1;
-            this.coffeePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.coffeePanel_Paint_1);
             // 
             // label12
             // 
@@ -372,6 +375,7 @@ namespace KIOSK
             this.coffeePtBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox4.TabIndex = 5;
             this.coffeePtBox4.TabStop = false;
+            this.coffeePtBox4.Click += new System.EventHandler(this.coffeePtBox4_Click);
             // 
             // coffeePtBox6
             // 
@@ -383,6 +387,7 @@ namespace KIOSK
             this.coffeePtBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox6.TabIndex = 7;
             this.coffeePtBox6.TabStop = false;
+            this.coffeePtBox6.Click += new System.EventHandler(this.coffeePtBox6_Click);
             // 
             // coffeePtBox7
             // 
@@ -394,6 +399,7 @@ namespace KIOSK
             this.coffeePtBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox7.TabIndex = 8;
             this.coffeePtBox7.TabStop = false;
+            this.coffeePtBox7.Click += new System.EventHandler(this.coffeePtBox7_Click);
             // 
             // coffeePtBox8
             // 
@@ -417,6 +423,7 @@ namespace KIOSK
             this.coffeePtBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox9.TabIndex = 10;
             this.coffeePtBox9.TabStop = false;
+            this.coffeePtBox9.Click += new System.EventHandler(this.coffeePtBox9_Click);
             // 
             // coffeePtBox10
             // 
@@ -428,6 +435,7 @@ namespace KIOSK
             this.coffeePtBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox10.TabIndex = 11;
             this.coffeePtBox10.TabStop = false;
+            this.coffeePtBox10.Click += new System.EventHandler(this.coffeePtBox10_Click);
             // 
             // coffeePtBox11
             // 
@@ -439,17 +447,19 @@ namespace KIOSK
             this.coffeePtBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox11.TabIndex = 12;
             this.coffeePtBox11.TabStop = false;
+            this.coffeePtBox11.Click += new System.EventHandler(this.coffeePtBox11_Click);
             // 
-            // pictureBox12
+            // coffeePtBox12
             // 
-            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox12.Image = global::KIOSK.Properties.Resources.아이스_화이트_초콜릿_모카_removebg_preview;
-            this.pictureBox12.Location = new System.Drawing.Point(402, 329);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(127, 119);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 13;
-            this.pictureBox12.TabStop = false;
+            this.coffeePtBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.coffeePtBox12.Image = global::KIOSK.Properties.Resources.아이스_화이트_초콜릿_모카_removebg_preview;
+            this.coffeePtBox12.Location = new System.Drawing.Point(402, 329);
+            this.coffeePtBox12.Name = "coffeePtBox12";
+            this.coffeePtBox12.Size = new System.Drawing.Size(127, 119);
+            this.coffeePtBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.coffeePtBox12.TabIndex = 13;
+            this.coffeePtBox12.TabStop = false;
+            this.coffeePtBox12.Click += new System.EventHandler(this.coffeePtBox12_Click);
             // 
             // coffeePtBox5
             // 
@@ -461,6 +471,7 @@ namespace KIOSK
             this.coffeePtBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox5.TabIndex = 6;
             this.coffeePtBox5.TabStop = false;
+            this.coffeePtBox5.Click += new System.EventHandler(this.coffeePtBox5_Click);
             // 
             // label1
             // 
@@ -468,11 +479,12 @@ namespace KIOSK
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(33, 137);
+            this.label1.Location = new System.Drawing.Point(33, 131);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(67, 26);
             this.label1.TabIndex = 14;
-            this.label1.Text = "아메리카노";
+            this.label1.Text = "아메리카노\r\n2500\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -480,11 +492,13 @@ namespace KIOSK
             this.label2.AutoSize = true;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(172, 137);
+            this.label2.Location = new System.Drawing.Point(172, 131);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.Size = new System.Drawing.Size(55, 26);
             this.label2.TabIndex = 15;
-            this.label2.Text = "카페라떼";
+            this.label2.Text = "카페라떼\r\n3000\r\n";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -492,11 +506,12 @@ namespace KIOSK
             this.label3.AutoSize = true;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(299, 137);
+            this.label3.Location = new System.Drawing.Point(299, 131);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 13);
+            this.label3.Size = new System.Drawing.Size(67, 26);
             this.label3.TabIndex = 16;
-            this.label3.Text = "바닐라라떼";
+            this.label3.Text = "바닐라라떼\r\n3000";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -504,11 +519,12 @@ namespace KIOSK
             this.label4.AutoSize = true;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(432, 137);
+            this.label4.Location = new System.Drawing.Point(432, 131);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 13);
+            this.label4.Size = new System.Drawing.Size(67, 26);
             this.label4.TabIndex = 17;
-            this.label4.Text = "에스프레소";
+            this.label4.Text = "에스프레소\r\n2500\r\n";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -521,6 +537,7 @@ namespace KIOSK
             this.label5.Size = new System.Drawing.Size(85, 13);
             this.label5.TabIndex = 18;
             this.label5.Text = "돌체 콜드 브루";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -1274,7 +1291,6 @@ namespace KIOSK
             this.teaPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.843137F));
             this.teaPanel.Size = new System.Drawing.Size(533, 492);
             this.teaPanel.TabIndex = 0;
-            this.teaPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.teaPanel_Paint);
             // 
             // label48
             // 
@@ -1588,14 +1604,18 @@ namespace KIOSK
             // 
             // orderDGView
             // 
+            this.orderDGView.AllowUserToAddRows = false;
             this.orderDGView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.orderDGView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.orderDGView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productName,
             this.price,
-            this.count});
+            this.add,
+            this.count,
+            this.del});
             this.orderDGView.Location = new System.Drawing.Point(22, 621);
             this.orderDGView.Name = "orderDGView";
+            this.orderDGView.ReadOnly = true;
             this.orderDGView.RowHeadersVisible = false;
             this.orderDGView.RowTemplate.Height = 25;
             this.orderDGView.Size = new System.Drawing.Size(430, 169);
@@ -1604,21 +1624,43 @@ namespace KIOSK
             // 
             // productName
             // 
+            this.productName.Frozen = true;
             this.productName.HeaderText = "제품명";
             this.productName.Name = "productName";
+            this.productName.ReadOnly = true;
             this.productName.Width = 227;
             // 
             // price
             // 
+            this.price.Frozen = true;
             this.price.HeaderText = "가격";
             this.price.Name = "price";
-            this.price.Width = 130;
+            this.price.ReadOnly = true;
+            this.price.Width = 80;
+            // 
+            // add
+            // 
+            this.add.Frozen = true;
+            this.add.HeaderText = "";
+            this.add.Name = "add";
+            this.add.ReadOnly = true;
+            this.add.Width = 30;
             // 
             // count
             // 
+            this.count.Frozen = true;
             this.count.HeaderText = "갯수";
             this.count.Name = "count";
-            this.count.Width = 70;
+            this.count.ReadOnly = true;
+            this.count.Width = 60;
+            // 
+            // del
+            // 
+            this.del.Frozen = true;
+            this.del.HeaderText = "";
+            this.del.Name = "del";
+            this.del.ReadOnly = true;
+            this.del.Width = 30;
             // 
             // label49
             // 
@@ -1640,12 +1682,33 @@ namespace KIOSK
             this.panel2.Size = new System.Drawing.Size(614, 75);
             this.panel2.TabIndex = 7;
             // 
+            // delBtn
+            // 
+            this.delBtn.Location = new System.Drawing.Point(467, 695);
+            this.delBtn.Name = "delBtn";
+            this.delBtn.Size = new System.Drawing.Size(103, 23);
+            this.delBtn.TabIndex = 8;
+            this.delBtn.Text = "전체삭제";
+            this.delBtn.UseVisualStyleBackColor = true;
+            this.delBtn.Click += new System.EventHandler(this.delBtn_Click);
+            // 
+            // sumPriceLbl
+            // 
+            this.sumPriceLbl.AutoSize = true;
+            this.sumPriceLbl.Location = new System.Drawing.Point(467, 621);
+            this.sumPriceLbl.Name = "sumPriceLbl";
+            this.sumPriceLbl.Size = new System.Drawing.Size(66, 15);
+            this.sumPriceLbl.TabIndex = 9;
+            this.sumPriceLbl.Text = "전체금액 : ";
+            // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(600, 820);
+            this.Controls.Add(this.sumPriceLbl);
+            this.Controls.Add(this.delBtn);
             this.Controls.Add(this.label49);
             this.Controls.Add(this.orderDGView);
             this.Controls.Add(this.panel1);
@@ -1672,7 +1735,7 @@ namespace KIOSK
             ((System.ComponentModel.ISupportInitialize)(this.coffeePtBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coffeePtBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coffeePtBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coffeePtBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coffeePtBox5)).EndInit();
             this.tapAde.ResumeLayout(false);
             this.aidPanel.ResumeLayout(false);
@@ -1737,9 +1800,6 @@ namespace KIOSK
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabPage tabCoffee;
         private System.Windows.Forms.DataGridView orderDGView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn count;
         private System.Windows.Forms.TableLayoutPanel teaPanel;
         private System.Windows.Forms.TableLayoutPanel coffeePanel;
         private System.Windows.Forms.TableLayoutPanel aidPanel;
@@ -1755,7 +1815,7 @@ namespace KIOSK
         private System.Windows.Forms.PictureBox coffeePtBox9;
         private System.Windows.Forms.PictureBox coffeePtBox10;
         private System.Windows.Forms.PictureBox coffeePtBox11;
-        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox coffeePtBox12;
         private System.Windows.Forms.PictureBox aidPtBox1;
         private System.Windows.Forms.PictureBox aidPtBox2;
         private System.Windows.Forms.PictureBox aidPtBox3;
@@ -1842,5 +1902,12 @@ namespace KIOSK
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button delBtn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn add;
+        private System.Windows.Forms.DataGridViewTextBoxColumn count;
+        private System.Windows.Forms.DataGridViewTextBoxColumn del;
+        private System.Windows.Forms.Label sumPriceLbl;
     }
 }

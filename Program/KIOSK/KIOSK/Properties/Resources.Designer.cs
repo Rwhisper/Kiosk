@@ -373,6 +373,16 @@ namespace KIOSK.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap 카드_이미지 {
+            get {
+                object obj = ResourceManager.GetObject("카드 이미지", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 카페모카_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("카페모카-removebg-preview", resourceCulture);
