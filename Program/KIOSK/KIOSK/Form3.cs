@@ -18,7 +18,7 @@ namespace KIOSK
             InitializeComponent();
             _items = items;
         }
-
+        Database db;
         private void Form3_Load(object sender, EventArgs e)
         {
             int sum=0;
@@ -89,10 +89,19 @@ namespace KIOSK
             this.Close();
         }
 
+        private void Order()
+        {
+            foreach(var item in _items)
+            {
+                db.OrderInsert(item.ItemName, item.Count, 12345678, item.Price);
+            }
+        }
+
         private void paymentBtn_Click(object sender, EventArgs e)
         {
             if(storeRButton.Checked == true)
-            {
+            {                
+                Order();
                 PaymentPage payment = new PaymentPage();
                 payment.ShowDialog();
                 this.Hide();
@@ -102,15 +111,13 @@ namespace KIOSK
             }
             else if (packRButton.Checked == true)
             {
+                Order();
                 PaymentPage payment = new PaymentPage();
                 payment.ShowDialog();
                 this.Hide();
                 Form1 form1 = new Form1();
                 form1.ShowDialog();
                 this.Close();
-
-
-
 
             }
             else
