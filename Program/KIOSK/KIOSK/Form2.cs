@@ -292,8 +292,9 @@ namespace KIOSK
             {
                 SelectItem(10);
             }
+            AddDataInTable();
         }
-        private void coffeePtBox11_Click(object sender, EventArgs e)
+        private void coffeePtBox1_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("토피넛라떼를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
