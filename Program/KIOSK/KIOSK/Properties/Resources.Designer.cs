@@ -283,6 +283,16 @@ namespace KIOSK.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap 아이스_토피_넛_라떼_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("아이스_토피_넛_라떼-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 아이스_푸를_청귤_민트_티_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("아이스_푸를_청귤_민트_티-removebg-preview", resourceCulture);

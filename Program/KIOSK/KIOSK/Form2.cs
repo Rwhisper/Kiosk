@@ -145,33 +145,33 @@ namespace KIOSK
             {
                 return null;
             }
-            
+
         }
 
         private void orderBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            
+
             Form3 showForm3 = new Form3(GetItems());
             showForm3.ShowDialog();
 
         }
         private void SelectItem(int i)
         {
-            Item item = items[i-1]; 
+            Item item = items[i - 1];
             SearchAndAdd(item);
             SumPriceInsert();
         }
         private void SearchAndAdd(Item item)
         {
             int cnt = 0;
-            if(this.orderDGView.RowCount != 0)
+            if (this.orderDGView.RowCount != 0)
             {
-                for(int i =0; i< this.orderDGView.RowCount; i++)
+                for (int i = 0; i < this.orderDGView.RowCount; i++)
                 {
                     if (orderDGView.Rows[i].Cells[0].Value != null)
                     {
-                       
+
                         if (orderDGView.Rows[i].Cells[0].Value.ToString() == item.ItemName)
                         {
                             int price = 0;
@@ -179,15 +179,15 @@ namespace KIOSK
                             price = Convert.ToInt32(orderDGView.Rows[i].Cells[1].Value);
                             count = Convert.ToInt32(orderDGView.Rows[i].Cells[3].Value);
 
-                            orderDGView.Rows[i].Cells[1].Value = price+ item.Price;
+                            orderDGView.Rows[i].Cells[1].Value = price + item.Price;
                             orderDGView.Rows[i].Cells[3].Value = count + 1;
-                            
+
                             return;
                         }
                     }
-                    cnt = i+1;
+                    cnt = i + 1;
                 }
-                
+
             }
             DataGridViewButtonCell delBtn = new DataGridViewButtonCell();
             DataGridViewButtonCell addBtn = new DataGridViewButtonCell();
@@ -196,12 +196,12 @@ namespace KIOSK
             orderDGView.Rows[cnt].Cells[2].Value = "▲";
             orderDGView.Rows[cnt].Cells[4] = delBtn;
             orderDGView.Rows[cnt].Cells[4].Value = "▼";
-            
+
         }
-      
+
         //private void AddDataInTable()
         //{
-            
+
         //    DataTable table = new DataTable();
         //    foreach(Item i in _items.Values)
         //    {
@@ -211,12 +211,12 @@ namespace KIOSK
         //    orderDGView.DataSource = table;
 
         //}
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-       
+
 
         private void tabCoffee_Click(object sender, EventArgs e)
         {
@@ -292,9 +292,8 @@ namespace KIOSK
             {
                 SelectItem(10);
             }
-            AddDataInTable();
         }
-        private void coffeePtBox1_Click(object sender, EventArgs e)
+        private void coffeePtBox11_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("토피넛라떼를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
@@ -311,18 +310,18 @@ namespace KIOSK
 
         private void sfPtBox12_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void SumPriceInsert()
         {
             int sum = 0;
-            if(this.orderDGView.RowCount == 0)
+            if (this.orderDGView.RowCount == 0)
             {
                 sumPriceLbl.Text = "총 금액 : " + 0;
                 return;
             }
-            for(int i = 0; i < orderDGView.RowCount; i++)
+            for (int i = 0; i < orderDGView.RowCount; i++)
             {
                 sum += Convert.ToInt32(orderDGView.Rows[i].Cells[1].Value);
             }
@@ -334,7 +333,7 @@ namespace KIOSK
             //MessageBox.Show(orderDGView.Columns[e.RowIndex].ToString());
             //MessageBox.Show(e.ColumnIndex.ToString());
             //MessageBox.Show(e.RowIndex.ToString());
-            if(e.ColumnIndex == 2)
+            if (e.ColumnIndex == 2)
             {
                 int price = Convert.ToInt32(orderDGView.Rows[e.RowIndex].Cells[1].Value);
                 int count = Convert.ToInt32(orderDGView.Rows[e.RowIndex].Cells[3].Value);
@@ -342,11 +341,11 @@ namespace KIOSK
                 orderDGView.Rows[e.RowIndex].Cells[1].Value = price + (price / count);
                 orderDGView.Rows[e.RowIndex].Cells[3].Value = count + 1;
             }
-            else if(e.ColumnIndex == 4)
+            else if (e.ColumnIndex == 4)
             {
                 int price = Convert.ToInt32(orderDGView.Rows[e.RowIndex].Cells[1].Value);
                 int count = Convert.ToInt32(orderDGView.Rows[e.RowIndex].Cells[3].Value);
-                if ((count-1) == 0)
+                if ((count - 1) == 0)
                 {
                     if (MessageBox.Show("현재 품목을 장바구니에서 제거하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
@@ -355,7 +354,7 @@ namespace KIOSK
                     }
 
                     return;
-                }                    
+                }
                 orderDGView.Rows[e.RowIndex].Cells[1].Value = price - (price / count);
                 orderDGView.Rows[e.RowIndex].Cells[3].Value = count - 1;
             }
@@ -389,8 +388,8 @@ namespace KIOSK
                     this.orderDGView.Rows.RemoveAt(i);
                 }
             }
-           
-           
+
+
         }
     }
 }

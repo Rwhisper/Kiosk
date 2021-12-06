@@ -216,21 +216,19 @@ namespace KIOSK
             this.tabCtrl.Controls.Add(this.tabSmoo);
             this.tabCtrl.Controls.Add(this.tabTea);
             this.tabCtrl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tabCtrl.Location = new System.Drawing.Point(28, 105);
-            this.tabCtrl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabCtrl.Location = new System.Drawing.Point(22, 79);
             this.tabCtrl.Name = "tabCtrl";
             this.tabCtrl.SelectedIndex = 0;
-            this.tabCtrl.Size = new System.Drawing.Size(705, 703);
+            this.tabCtrl.Size = new System.Drawing.Size(548, 527);
             this.tabCtrl.TabIndex = 0;
             // 
             // tabCoffee
             // 
             this.tabCoffee.Controls.Add(this.coffeePanel);
-            this.tabCoffee.Location = new System.Drawing.Point(4, 29);
-            this.tabCoffee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabCoffee.Location = new System.Drawing.Point(4, 24);
             this.tabCoffee.Name = "tabCoffee";
-            this.tabCoffee.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabCoffee.Size = new System.Drawing.Size(697, 670);
+            this.tabCoffee.Padding = new System.Windows.Forms.Padding(3);
+            this.tabCoffee.Size = new System.Drawing.Size(540, 499);
             this.tabCoffee.TabIndex = 3;
             this.tabCoffee.Text = "커피";
             this.tabCoffee.UseVisualStyleBackColor = true;
@@ -269,8 +267,7 @@ namespace KIOSK
             this.coffeePanel.Controls.Add(this.label6, 1, 3);
             this.coffeePanel.Controls.Add(this.label7, 2, 3);
             this.coffeePanel.Controls.Add(this.label8, 3, 3);
-            this.coffeePanel.Location = new System.Drawing.Point(5, 4);
-            this.coffeePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.coffeePanel.Location = new System.Drawing.Point(4, 3);
             this.coffeePanel.Name = "coffeePanel";
             this.coffeePanel.RowCount = 6;
             this.coffeePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.4902F));
@@ -279,9 +276,9 @@ namespace KIOSK
             this.coffeePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.843137F));
             this.coffeePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.4902F));
             this.coffeePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.843137F));
-            this.coffeePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.coffeePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.coffeePanel.Size = new System.Drawing.Size(685, 656);
+            this.coffeePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.coffeePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.coffeePanel.Size = new System.Drawing.Size(533, 492);
             this.coffeePanel.TabIndex = 1;
             // 
             // label12
@@ -290,10 +287,9 @@ namespace KIOSK
             this.label12.AutoSize = true;
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label12.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(222, 621);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(172, 465);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(68, 17);
+            this.label12.Size = new System.Drawing.Size(55, 13);
             this.label12.TabIndex = 25;
             this.label12.Text = "카푸치노";
             // 
@@ -303,10 +299,9 @@ namespace KIOSK
             this.label11.AutoSize = true;
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label11.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(51, 621);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(39, 465);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(68, 17);
+            this.label11.Size = new System.Drawing.Size(55, 13);
             this.label11.TabIndex = 24;
             this.label11.Text = "카페모카";
             // 
@@ -316,10 +311,9 @@ namespace KIOSK
             this.label10.AutoSize = true;
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(531, 621);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(411, 465);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(136, 17);
+            this.label10.Size = new System.Drawing.Size(109, 13);
             this.label10.TabIndex = 23;
             this.label10.Text = "화이트 초콜릿 모카";
             // 
@@ -329,20 +323,19 @@ namespace KIOSK
             this.label9.AutoSize = true;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(384, 621);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(297, 465);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 17);
+            this.label9.Size = new System.Drawing.Size(70, 13);
             this.label9.TabIndex = 22;
             this.label9.Text = "토피넛 라떼";
             // 
             // coffeePtBox1
             // 
             this.coffeePtBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox1.Location = new System.Drawing.Point(4, 4);
-            this.coffeePtBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.coffeePtBox1.Image = global::KIOSK.Properties.Resources.coffee1;
+            this.coffeePtBox1.Location = new System.Drawing.Point(3, 3);
             this.coffeePtBox1.Name = "coffeePtBox1";
-            this.coffeePtBox1.Size = new System.Drawing.Size(163, 159);
+            this.coffeePtBox1.Size = new System.Drawing.Size(127, 119);
             this.coffeePtBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox1.TabIndex = 2;
             this.coffeePtBox1.TabStop = false;
@@ -351,10 +344,10 @@ namespace KIOSK
             // coffeePtBox2
             // 
             this.coffeePtBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox2.Location = new System.Drawing.Point(175, 4);
-            this.coffeePtBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.coffeePtBox2.Image = global::KIOSK.Properties.Resources.coffee2;
+            this.coffeePtBox2.Location = new System.Drawing.Point(136, 3);
             this.coffeePtBox2.Name = "coffeePtBox2";
-            this.coffeePtBox2.Size = new System.Drawing.Size(163, 159);
+            this.coffeePtBox2.Size = new System.Drawing.Size(127, 119);
             this.coffeePtBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox2.TabIndex = 3;
             this.coffeePtBox2.TabStop = false;
@@ -363,10 +356,10 @@ namespace KIOSK
             // coffeePtBox3
             // 
             this.coffeePtBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox3.Location = new System.Drawing.Point(346, 4);
-            this.coffeePtBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.coffeePtBox3.Image = global::KIOSK.Properties.Resources.coffee3;
+            this.coffeePtBox3.Location = new System.Drawing.Point(269, 3);
             this.coffeePtBox3.Name = "coffeePtBox3";
-            this.coffeePtBox3.Size = new System.Drawing.Size(163, 159);
+            this.coffeePtBox3.Size = new System.Drawing.Size(127, 119);
             this.coffeePtBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox3.TabIndex = 4;
             this.coffeePtBox3.TabStop = false;
@@ -375,10 +368,10 @@ namespace KIOSK
             // coffeePtBox4
             // 
             this.coffeePtBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox4.Location = new System.Drawing.Point(517, 4);
-            this.coffeePtBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.coffeePtBox4.Image = global::KIOSK.Properties.Resources.coffee4;
+            this.coffeePtBox4.Location = new System.Drawing.Point(402, 3);
             this.coffeePtBox4.Name = "coffeePtBox4";
-            this.coffeePtBox4.Size = new System.Drawing.Size(163, 159);
+            this.coffeePtBox4.Size = new System.Drawing.Size(127, 119);
             this.coffeePtBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox4.TabIndex = 5;
             this.coffeePtBox4.TabStop = false;
@@ -387,10 +380,10 @@ namespace KIOSK
             // coffeePtBox6
             // 
             this.coffeePtBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox6.Location = new System.Drawing.Point(175, 222);
-            this.coffeePtBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.coffeePtBox6.Image = global::KIOSK.Properties.Resources.바닐라_크림_콜드_브루_removebg_preview;
+            this.coffeePtBox6.Location = new System.Drawing.Point(136, 166);
             this.coffeePtBox6.Name = "coffeePtBox6";
-            this.coffeePtBox6.Size = new System.Drawing.Size(163, 159);
+            this.coffeePtBox6.Size = new System.Drawing.Size(127, 119);
             this.coffeePtBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox6.TabIndex = 7;
             this.coffeePtBox6.TabStop = false;
@@ -399,10 +392,10 @@ namespace KIOSK
             // coffeePtBox7
             // 
             this.coffeePtBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox7.Location = new System.Drawing.Point(346, 222);
-            this.coffeePtBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.coffeePtBox7.Image = global::KIOSK.Properties.Resources.아이스_돌체라떼_removebg_preview;
+            this.coffeePtBox7.Location = new System.Drawing.Point(269, 166);
             this.coffeePtBox7.Name = "coffeePtBox7";
-            this.coffeePtBox7.Size = new System.Drawing.Size(163, 159);
+            this.coffeePtBox7.Size = new System.Drawing.Size(127, 119);
             this.coffeePtBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox7.TabIndex = 8;
             this.coffeePtBox7.TabStop = false;
@@ -411,10 +404,10 @@ namespace KIOSK
             // coffeePtBox8
             // 
             this.coffeePtBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox8.Location = new System.Drawing.Point(517, 222);
-            this.coffeePtBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.coffeePtBox8.Image = global::KIOSK.Properties.Resources.콜드_브루_removebg_preview;
+            this.coffeePtBox8.Location = new System.Drawing.Point(402, 166);
             this.coffeePtBox8.Name = "coffeePtBox8";
-            this.coffeePtBox8.Size = new System.Drawing.Size(163, 159);
+            this.coffeePtBox8.Size = new System.Drawing.Size(127, 119);
             this.coffeePtBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox8.TabIndex = 9;
             this.coffeePtBox8.TabStop = false;
@@ -423,10 +416,10 @@ namespace KIOSK
             // coffeePtBox9
             // 
             this.coffeePtBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox9.Location = new System.Drawing.Point(4, 440);
-            this.coffeePtBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.coffeePtBox9.Image = global::KIOSK.Properties.Resources.카페모카_removebg_preview;
+            this.coffeePtBox9.Location = new System.Drawing.Point(3, 329);
             this.coffeePtBox9.Name = "coffeePtBox9";
-            this.coffeePtBox9.Size = new System.Drawing.Size(163, 159);
+            this.coffeePtBox9.Size = new System.Drawing.Size(127, 119);
             this.coffeePtBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox9.TabIndex = 10;
             this.coffeePtBox9.TabStop = false;
@@ -435,10 +428,10 @@ namespace KIOSK
             // coffeePtBox10
             // 
             this.coffeePtBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox10.Location = new System.Drawing.Point(175, 440);
-            this.coffeePtBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.coffeePtBox10.Image = global::KIOSK.Properties.Resources.카푸치노_removebg_preview;
+            this.coffeePtBox10.Location = new System.Drawing.Point(136, 329);
             this.coffeePtBox10.Name = "coffeePtBox10";
-            this.coffeePtBox10.Size = new System.Drawing.Size(163, 159);
+            this.coffeePtBox10.Size = new System.Drawing.Size(127, 119);
             this.coffeePtBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox10.TabIndex = 11;
             this.coffeePtBox10.TabStop = false;
@@ -447,10 +440,10 @@ namespace KIOSK
             // coffeePtBox11
             // 
             this.coffeePtBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox11.Location = new System.Drawing.Point(346, 440);
-            this.coffeePtBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.coffeePtBox11.Image = global::KIOSK.Properties.Resources.아이스_토피_넛_라떼_removebg_preview;
+            this.coffeePtBox11.Location = new System.Drawing.Point(269, 329);
             this.coffeePtBox11.Name = "coffeePtBox11";
-            this.coffeePtBox11.Size = new System.Drawing.Size(163, 159);
+            this.coffeePtBox11.Size = new System.Drawing.Size(127, 119);
             this.coffeePtBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox11.TabIndex = 12;
             this.coffeePtBox11.TabStop = false;
@@ -458,22 +451,23 @@ namespace KIOSK
             // 
             // coffeePtBox12
             // 
-            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox12.Image = global::KIOSK.Properties.Resources.아이스_화이트_초콜릿_모카_removebg_preview;
-            this.pictureBox12.Location = new System.Drawing.Point(402, 329);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(127, 119);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 13;
-            this.pictureBox12.TabStop = false;
+            this.coffeePtBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.coffeePtBox12.Image = global::KIOSK.Properties.Resources.아이스_화이트_초콜릿_모카_removebg_preview;
+            this.coffeePtBox12.Location = new System.Drawing.Point(402, 329);
+            this.coffeePtBox12.Name = "coffeePtBox12";
+            this.coffeePtBox12.Size = new System.Drawing.Size(127, 119);
+            this.coffeePtBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.coffeePtBox12.TabIndex = 13;
+            this.coffeePtBox12.TabStop = false;
+            this.coffeePtBox12.Click += new System.EventHandler(this.coffeePtBox12_Click);
             // 
             // coffeePtBox5
             // 
             this.coffeePtBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coffeePtBox5.Location = new System.Drawing.Point(4, 222);
-            this.coffeePtBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.coffeePtBox5.Image = global::KIOSK.Properties.Resources.돌체_콜드_브루_removebg_preview;
+            this.coffeePtBox5.Location = new System.Drawing.Point(3, 166);
             this.coffeePtBox5.Name = "coffeePtBox5";
-            this.coffeePtBox5.Size = new System.Drawing.Size(163, 159);
+            this.coffeePtBox5.Size = new System.Drawing.Size(127, 119);
             this.coffeePtBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.coffeePtBox5.TabIndex = 6;
             this.coffeePtBox5.TabStop = false;
@@ -485,9 +479,9 @@ namespace KIOSK
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(33, 137);
+            this.label1.Location = new System.Drawing.Point(33, 131);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(67, 26);
             this.label1.TabIndex = 14;
             this.label1.Text = "아메리카노\r\n2500\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -498,9 +492,9 @@ namespace KIOSK
             this.label2.AutoSize = true;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(172, 137);
+            this.label2.Location = new System.Drawing.Point(172, 131);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.Size = new System.Drawing.Size(55, 26);
             this.label2.TabIndex = 15;
             this.label2.Text = "카페라떼\r\n3000\r\n";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -512,9 +506,9 @@ namespace KIOSK
             this.label3.AutoSize = true;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(299, 137);
+            this.label3.Location = new System.Drawing.Point(299, 131);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 13);
+            this.label3.Size = new System.Drawing.Size(67, 26);
             this.label3.TabIndex = 16;
             this.label3.Text = "바닐라라떼\r\n3000";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -525,9 +519,9 @@ namespace KIOSK
             this.label4.AutoSize = true;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(432, 137);
+            this.label4.Location = new System.Drawing.Point(432, 131);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 13);
+            this.label4.Size = new System.Drawing.Size(67, 26);
             this.label4.TabIndex = 17;
             this.label4.Text = "에스프레소\r\n2500\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -538,10 +532,9 @@ namespace KIOSK
             this.label5.AutoSize = true;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(32, 402);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(24, 300);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 17);
+            this.label5.Size = new System.Drawing.Size(85, 13);
             this.label5.TabIndex = 18;
             this.label5.Text = "돌체 콜드 브루";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -552,10 +545,9 @@ namespace KIOSK
             this.label6.AutoSize = true;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(179, 402);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(137, 300);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(155, 17);
+            this.label6.Size = new System.Drawing.Size(124, 13);
             this.label6.TabIndex = 19;
             this.label6.Text = "바닐라 크림 콜드 브루";
             // 
@@ -565,10 +557,9 @@ namespace KIOSK
             this.label7.AutoSize = true;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(391, 402);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(303, 300);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 17);
+            this.label7.Size = new System.Drawing.Size(58, 13);
             this.label7.TabIndex = 20;
             this.label7.Text = "돌체 라떼";
             // 
@@ -578,21 +569,19 @@ namespace KIOSK
             this.label8.AutoSize = true;
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(563, 402);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(437, 300);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 17);
+            this.label8.Size = new System.Drawing.Size(58, 13);
             this.label8.TabIndex = 21;
             this.label8.Text = "콜드 브루";
             // 
             // tapAde
             // 
             this.tapAde.Controls.Add(this.aidPanel);
-            this.tapAde.Location = new System.Drawing.Point(4, 29);
-            this.tapAde.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tapAde.Location = new System.Drawing.Point(4, 24);
             this.tapAde.Name = "tapAde";
-            this.tapAde.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tapAde.Size = new System.Drawing.Size(697, 670);
+            this.tapAde.Padding = new System.Windows.Forms.Padding(3);
+            this.tapAde.Size = new System.Drawing.Size(540, 499);
             this.tapAde.TabIndex = 0;
             this.tapAde.Text = "에이드 & 모히또";
             this.tapAde.UseVisualStyleBackColor = true;
@@ -629,8 +618,7 @@ namespace KIOSK
             this.aidPanel.Controls.Add(this.label18, 1, 3);
             this.aidPanel.Controls.Add(this.label19, 2, 3);
             this.aidPanel.Controls.Add(this.label20, 3, 3);
-            this.aidPanel.Location = new System.Drawing.Point(5, 4);
-            this.aidPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.aidPanel.Location = new System.Drawing.Point(4, 3);
             this.aidPanel.Name = "aidPanel";
             this.aidPanel.RowCount = 6;
             this.aidPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.4902F));
@@ -639,9 +627,9 @@ namespace KIOSK
             this.aidPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.843137F));
             this.aidPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.4902F));
             this.aidPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.843137F));
-            this.aidPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.aidPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.aidPanel.Size = new System.Drawing.Size(685, 656);
+            this.aidPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.aidPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.aidPanel.Size = new System.Drawing.Size(533, 492);
             this.aidPanel.TabIndex = 1;
             // 
             // label24
@@ -650,10 +638,9 @@ namespace KIOSK
             this.label24.AutoSize = true;
             this.label24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label24.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label24.Location = new System.Drawing.Point(215, 621);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Location = new System.Drawing.Point(166, 465);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(83, 17);
+            this.label24.Size = new System.Drawing.Size(67, 13);
             this.label24.TabIndex = 26;
             this.label24.Text = "자몽에이드";
             // 
@@ -663,10 +650,9 @@ namespace KIOSK
             this.label23.AutoSize = true;
             this.label23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label23.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(44, 621);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Location = new System.Drawing.Point(33, 465);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(83, 17);
+            this.label23.Size = new System.Drawing.Size(67, 13);
             this.label23.TabIndex = 25;
             this.label23.Text = "자몽에이드";
             // 
@@ -676,10 +662,9 @@ namespace KIOSK
             this.label22.AutoSize = true;
             this.label22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label22.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(557, 621);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Location = new System.Drawing.Point(432, 465);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(83, 17);
+            this.label22.Size = new System.Drawing.Size(67, 13);
             this.label22.TabIndex = 24;
             this.label22.Text = "자몽에이드";
             // 
@@ -689,20 +674,19 @@ namespace KIOSK
             this.label21.AutoSize = true;
             this.label21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label21.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(386, 621);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Location = new System.Drawing.Point(299, 465);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(83, 17);
+            this.label21.Size = new System.Drawing.Size(67, 13);
             this.label21.TabIndex = 23;
             this.label21.Text = "자몽에이드";
             // 
             // aidPtBox1
             // 
             this.aidPtBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox1.Location = new System.Drawing.Point(4, 4);
-            this.aidPtBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.aidPtBox1.Image = global::KIOSK.Properties.Resources.tea1;
+            this.aidPtBox1.Location = new System.Drawing.Point(3, 3);
             this.aidPtBox1.Name = "aidPtBox1";
-            this.aidPtBox1.Size = new System.Drawing.Size(163, 159);
+            this.aidPtBox1.Size = new System.Drawing.Size(127, 119);
             this.aidPtBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.aidPtBox1.TabIndex = 3;
             this.aidPtBox1.TabStop = false;
@@ -710,10 +694,10 @@ namespace KIOSK
             // aidPtBox2
             // 
             this.aidPtBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox2.Location = new System.Drawing.Point(175, 4);
-            this.aidPtBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.aidPtBox2.Image = global::KIOSK.Properties.Resources.쿨_라임_피지오_removebg_preview;
+            this.aidPtBox2.Location = new System.Drawing.Point(136, 3);
             this.aidPtBox2.Name = "aidPtBox2";
-            this.aidPtBox2.Size = new System.Drawing.Size(163, 159);
+            this.aidPtBox2.Size = new System.Drawing.Size(127, 119);
             this.aidPtBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.aidPtBox2.TabIndex = 4;
             this.aidPtBox2.TabStop = false;
@@ -721,10 +705,10 @@ namespace KIOSK
             // aidPtBox3
             // 
             this.aidPtBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox3.Location = new System.Drawing.Point(346, 4);
-            this.aidPtBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.aidPtBox3.Image = global::KIOSK.Properties.Resources.스노우_민트_초콜릿_블렌디드_removebg_preview;
+            this.aidPtBox3.Location = new System.Drawing.Point(269, 3);
             this.aidPtBox3.Name = "aidPtBox3";
-            this.aidPtBox3.Size = new System.Drawing.Size(163, 159);
+            this.aidPtBox3.Size = new System.Drawing.Size(127, 119);
             this.aidPtBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.aidPtBox3.TabIndex = 7;
             this.aidPtBox3.TabStop = false;
@@ -732,10 +716,10 @@ namespace KIOSK
             // aidPtBox4
             // 
             this.aidPtBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox4.Location = new System.Drawing.Point(517, 4);
-            this.aidPtBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.aidPtBox4.Image = global::KIOSK.Properties.Resources.피치_레몬_블렌디드_removebg_preview;
+            this.aidPtBox4.Location = new System.Drawing.Point(402, 3);
             this.aidPtBox4.Name = "aidPtBox4";
-            this.aidPtBox4.Size = new System.Drawing.Size(163, 159);
+            this.aidPtBox4.Size = new System.Drawing.Size(127, 119);
             this.aidPtBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.aidPtBox4.TabIndex = 6;
             this.aidPtBox4.TabStop = false;
@@ -743,10 +727,10 @@ namespace KIOSK
             // aidPtBox5
             // 
             this.aidPtBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox5.Location = new System.Drawing.Point(4, 222);
-            this.aidPtBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.aidPtBox5.Image = global::KIOSK.Properties.Resources.패션_탱고_티_레모네이드_피지오_removebg_preview;
+            this.aidPtBox5.Location = new System.Drawing.Point(3, 166);
             this.aidPtBox5.Name = "aidPtBox5";
-            this.aidPtBox5.Size = new System.Drawing.Size(163, 159);
+            this.aidPtBox5.Size = new System.Drawing.Size(127, 119);
             this.aidPtBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.aidPtBox5.TabIndex = 5;
             this.aidPtBox5.TabStop = false;
@@ -754,10 +738,10 @@ namespace KIOSK
             // aidPtBox6
             // 
             this.aidPtBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox6.Location = new System.Drawing.Point(175, 222);
-            this.aidPtBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.aidPtBox6.Image = global::KIOSK.Properties.Resources.블랙_티_레모네이드_피지오_removebg_preview;
+            this.aidPtBox6.Location = new System.Drawing.Point(136, 166);
             this.aidPtBox6.Name = "aidPtBox6";
-            this.aidPtBox6.Size = new System.Drawing.Size(163, 159);
+            this.aidPtBox6.Size = new System.Drawing.Size(127, 119);
             this.aidPtBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.aidPtBox6.TabIndex = 8;
             this.aidPtBox6.TabStop = false;
@@ -765,10 +749,10 @@ namespace KIOSK
             // aidPtBox7
             // 
             this.aidPtBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox7.Location = new System.Drawing.Point(346, 222);
-            this.aidPtBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.aidPtBox7.Image = global::KIOSK.Properties.Resources.딸기_딜라이트_요거트_블렌디드_removebg_preview;
+            this.aidPtBox7.Location = new System.Drawing.Point(269, 166);
             this.aidPtBox7.Name = "aidPtBox7";
-            this.aidPtBox7.Size = new System.Drawing.Size(163, 159);
+            this.aidPtBox7.Size = new System.Drawing.Size(127, 119);
             this.aidPtBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.aidPtBox7.TabIndex = 9;
             this.aidPtBox7.TabStop = false;
@@ -776,10 +760,10 @@ namespace KIOSK
             // aidPtBox8
             // 
             this.aidPtBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox8.Location = new System.Drawing.Point(517, 222);
-            this.aidPtBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.aidPtBox8.Image = global::KIOSK.Properties.Resources.민트_초콜릿_칩_블렌디드_removebg_preview;
+            this.aidPtBox8.Location = new System.Drawing.Point(402, 166);
             this.aidPtBox8.Name = "aidPtBox8";
-            this.aidPtBox8.Size = new System.Drawing.Size(163, 159);
+            this.aidPtBox8.Size = new System.Drawing.Size(127, 119);
             this.aidPtBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.aidPtBox8.TabIndex = 10;
             this.aidPtBox8.TabStop = false;
@@ -787,10 +771,10 @@ namespace KIOSK
             // aidPtBox9
             // 
             this.aidPtBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox9.Location = new System.Drawing.Point(4, 440);
-            this.aidPtBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.aidPtBox9.Image = global::KIOSK.Properties.Resources.tea1;
+            this.aidPtBox9.Location = new System.Drawing.Point(3, 329);
             this.aidPtBox9.Name = "aidPtBox9";
-            this.aidPtBox9.Size = new System.Drawing.Size(163, 159);
+            this.aidPtBox9.Size = new System.Drawing.Size(127, 119);
             this.aidPtBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.aidPtBox9.TabIndex = 11;
             this.aidPtBox9.TabStop = false;
@@ -798,10 +782,10 @@ namespace KIOSK
             // aidPtBox10
             // 
             this.aidPtBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox10.Location = new System.Drawing.Point(175, 440);
-            this.aidPtBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.aidPtBox10.Image = global::KIOSK.Properties.Resources.tea1;
+            this.aidPtBox10.Location = new System.Drawing.Point(136, 329);
             this.aidPtBox10.Name = "aidPtBox10";
-            this.aidPtBox10.Size = new System.Drawing.Size(163, 159);
+            this.aidPtBox10.Size = new System.Drawing.Size(127, 119);
             this.aidPtBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.aidPtBox10.TabIndex = 12;
             this.aidPtBox10.TabStop = false;
@@ -809,10 +793,10 @@ namespace KIOSK
             // aidPtBox11
             // 
             this.aidPtBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox11.Location = new System.Drawing.Point(346, 440);
-            this.aidPtBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.aidPtBox11.Image = global::KIOSK.Properties.Resources.tea1;
+            this.aidPtBox11.Location = new System.Drawing.Point(269, 329);
             this.aidPtBox11.Name = "aidPtBox11";
-            this.aidPtBox11.Size = new System.Drawing.Size(163, 159);
+            this.aidPtBox11.Size = new System.Drawing.Size(127, 119);
             this.aidPtBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.aidPtBox11.TabIndex = 13;
             this.aidPtBox11.TabStop = false;
@@ -820,10 +804,10 @@ namespace KIOSK
             // aidPtBox12
             // 
             this.aidPtBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aidPtBox12.Location = new System.Drawing.Point(517, 440);
-            this.aidPtBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.aidPtBox12.Image = global::KIOSK.Properties.Resources.tea1;
+            this.aidPtBox12.Location = new System.Drawing.Point(402, 329);
             this.aidPtBox12.Name = "aidPtBox12";
-            this.aidPtBox12.Size = new System.Drawing.Size(163, 159);
+            this.aidPtBox12.Size = new System.Drawing.Size(127, 119);
             this.aidPtBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.aidPtBox12.TabIndex = 14;
             this.aidPtBox12.TabStop = false;
@@ -834,10 +818,9 @@ namespace KIOSK
             this.label13.AutoSize = true;
             this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label13.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(44, 184);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(33, 137);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(83, 17);
+            this.label13.Size = new System.Drawing.Size(67, 13);
             this.label13.TabIndex = 15;
             this.label13.Text = "자몽에이드";
             // 
@@ -847,10 +830,9 @@ namespace KIOSK
             this.label14.AutoSize = true;
             this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label14.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(203, 184);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(157, 137);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(106, 17);
+            this.label14.Size = new System.Drawing.Size(85, 13);
             this.label14.TabIndex = 16;
             this.label14.Text = "쿨 라임 피지오";
             // 
@@ -860,10 +842,9 @@ namespace KIOSK
             this.label15.AutoSize = true;
             this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label15.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(352, 184);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(272, 137);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(151, 17);
+            this.label15.Size = new System.Drawing.Size(121, 13);
             this.label15.TabIndex = 17;
             this.label15.Text = "민트 초콜릿 블렌디드";
             // 
@@ -873,10 +854,9 @@ namespace KIOSK
             this.label16.AutoSize = true;
             this.label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label16.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(531, 184);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Location = new System.Drawing.Point(411, 137);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(136, 17);
+            this.label16.Size = new System.Drawing.Size(109, 13);
             this.label16.TabIndex = 18;
             this.label16.Text = "피치 레몬 블렌디드";
             // 
@@ -886,10 +866,9 @@ namespace KIOSK
             this.label17.AutoSize = true;
             this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label17.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(17, 402);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Location = new System.Drawing.Point(12, 300);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(136, 17);
+            this.label17.Size = new System.Drawing.Size(109, 13);
             this.label17.TabIndex = 19;
             this.label17.Text = "패션 티 레모네이드";
             // 
@@ -899,10 +878,9 @@ namespace KIOSK
             this.label18.AutoSize = true;
             this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label18.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(188, 402);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Location = new System.Drawing.Point(145, 300);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(136, 17);
+            this.label18.Size = new System.Drawing.Size(109, 13);
             this.label18.TabIndex = 20;
             this.label18.Text = "블랙 티 레모네이드";
             // 
@@ -912,10 +890,9 @@ namespace KIOSK
             this.label19.AutoSize = true;
             this.label19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label19.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.Location = new System.Drawing.Point(352, 402);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Location = new System.Drawing.Point(272, 300);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(151, 17);
+            this.label19.Size = new System.Drawing.Size(121, 13);
             this.label19.TabIndex = 21;
             this.label19.Text = "딸기 딜라이트 요거트";
             // 
@@ -925,21 +902,19 @@ namespace KIOSK
             this.label20.AutoSize = true;
             this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label20.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(523, 402);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Location = new System.Drawing.Point(405, 300);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(151, 17);
+            this.label20.Size = new System.Drawing.Size(121, 13);
             this.label20.TabIndex = 22;
             this.label20.Text = "민트 초코칩 블렌디드";
             // 
             // tabSmoo
             // 
             this.tabSmoo.Controls.Add(this.sfPtBox4);
-            this.tabSmoo.Location = new System.Drawing.Point(4, 29);
-            this.tabSmoo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabSmoo.Location = new System.Drawing.Point(4, 24);
             this.tabSmoo.Name = "tabSmoo";
-            this.tabSmoo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabSmoo.Size = new System.Drawing.Size(697, 670);
+            this.tabSmoo.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSmoo.Size = new System.Drawing.Size(540, 499);
             this.tabSmoo.TabIndex = 1;
             this.tabSmoo.Text = "스무디 & 프라페";
             this.tabSmoo.UseVisualStyleBackColor = true;
@@ -975,8 +950,7 @@ namespace KIOSK
             this.sfPtBox4.Controls.Add(this.label30, 1, 3);
             this.sfPtBox4.Controls.Add(this.label31, 2, 3);
             this.sfPtBox4.Controls.Add(this.label32, 3, 3);
-            this.sfPtBox4.Location = new System.Drawing.Point(5, 4);
-            this.sfPtBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sfPtBox4.Location = new System.Drawing.Point(4, 3);
             this.sfPtBox4.Name = "sfPtBox4";
             this.sfPtBox4.RowCount = 6;
             this.sfPtBox4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.4902F));
@@ -985,7 +959,7 @@ namespace KIOSK
             this.sfPtBox4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.843137F));
             this.sfPtBox4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.4902F));
             this.sfPtBox4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.843137F));
-            this.sfPtBox4.Size = new System.Drawing.Size(685, 656);
+            this.sfPtBox4.Size = new System.Drawing.Size(533, 492);
             this.sfPtBox4.TabIndex = 1;
             // 
             // label36
@@ -994,10 +968,9 @@ namespace KIOSK
             this.label36.AutoSize = true;
             this.label36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label36.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label36.Location = new System.Drawing.Point(215, 621);
-            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label36.Location = new System.Drawing.Point(166, 465);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(83, 17);
+            this.label36.Size = new System.Drawing.Size(67, 13);
             this.label36.TabIndex = 27;
             this.label36.Text = "자몽에이드";
             // 
@@ -1007,10 +980,9 @@ namespace KIOSK
             this.label35.AutoSize = true;
             this.label35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label35.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label35.Location = new System.Drawing.Point(44, 621);
-            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label35.Location = new System.Drawing.Point(33, 465);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(83, 17);
+            this.label35.Size = new System.Drawing.Size(67, 13);
             this.label35.TabIndex = 26;
             this.label35.Text = "자몽에이드";
             // 
@@ -1020,10 +992,9 @@ namespace KIOSK
             this.label34.AutoSize = true;
             this.label34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label34.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label34.Location = new System.Drawing.Point(557, 621);
-            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label34.Location = new System.Drawing.Point(432, 465);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(83, 17);
+            this.label34.Size = new System.Drawing.Size(67, 13);
             this.label34.TabIndex = 25;
             this.label34.Text = "자몽에이드";
             // 
@@ -1033,20 +1004,19 @@ namespace KIOSK
             this.label33.AutoSize = true;
             this.label33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label33.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label33.Location = new System.Drawing.Point(386, 621);
-            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label33.Location = new System.Drawing.Point(299, 465);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(83, 17);
+            this.label33.Size = new System.Drawing.Size(67, 13);
             this.label33.TabIndex = 24;
             this.label33.Text = "자몽에이드";
             // 
             // sfPtBox1
             // 
             this.sfPtBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sfPtBox1.Location = new System.Drawing.Point(4, 4);
-            this.sfPtBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sfPtBox1.Image = global::KIOSK.Properties.Resources.모카_프라푸치노_removebg_preview;
+            this.sfPtBox1.Location = new System.Drawing.Point(3, 3);
             this.sfPtBox1.Name = "sfPtBox1";
-            this.sfPtBox1.Size = new System.Drawing.Size(163, 159);
+            this.sfPtBox1.Size = new System.Drawing.Size(127, 119);
             this.sfPtBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sfPtBox1.TabIndex = 4;
             this.sfPtBox1.TabStop = false;
@@ -1054,10 +1024,10 @@ namespace KIOSK
             // sfPtBox2
             // 
             this.sfPtBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sfPtBox2.Location = new System.Drawing.Point(175, 4);
-            this.sfPtBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sfPtBox2.Image = global::KIOSK.Properties.Resources.자바칩프라푸치노_removebg_preview;
+            this.sfPtBox2.Location = new System.Drawing.Point(136, 3);
             this.sfPtBox2.Name = "sfPtBox2";
-            this.sfPtBox2.Size = new System.Drawing.Size(163, 159);
+            this.sfPtBox2.Size = new System.Drawing.Size(127, 119);
             this.sfPtBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sfPtBox2.TabIndex = 5;
             this.sfPtBox2.TabStop = false;
@@ -1065,10 +1035,10 @@ namespace KIOSK
             // sfPtBox3
             // 
             this.sfPtBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sfPtBox3.Location = new System.Drawing.Point(346, 4);
-            this.sfPtBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sfPtBox3.Image = global::KIOSK.Properties.Resources.초콜릿_크림칩_프라푸치노_removebg_preview;
+            this.sfPtBox3.Location = new System.Drawing.Point(269, 3);
             this.sfPtBox3.Name = "sfPtBox3";
-            this.sfPtBox3.Size = new System.Drawing.Size(163, 159);
+            this.sfPtBox3.Size = new System.Drawing.Size(127, 119);
             this.sfPtBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sfPtBox3.TabIndex = 6;
             this.sfPtBox3.TabStop = false;
@@ -1076,10 +1046,10 @@ namespace KIOSK
             // pictureBox4
             // 
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(517, 4);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Image = global::KIOSK.Properties.Resources.화이트_타이거_프라푸치노_removebg_preview;
+            this.pictureBox4.Location = new System.Drawing.Point(402, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(163, 159);
+            this.pictureBox4.Size = new System.Drawing.Size(127, 119);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
@@ -1087,10 +1057,10 @@ namespace KIOSK
             // sfPtBox5
             // 
             this.sfPtBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sfPtBox5.Location = new System.Drawing.Point(4, 222);
-            this.sfPtBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sfPtBox5.Image = global::KIOSK.Properties.Resources.tea1;
+            this.sfPtBox5.Location = new System.Drawing.Point(3, 166);
             this.sfPtBox5.Name = "sfPtBox5";
-            this.sfPtBox5.Size = new System.Drawing.Size(163, 159);
+            this.sfPtBox5.Size = new System.Drawing.Size(127, 119);
             this.sfPtBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sfPtBox5.TabIndex = 8;
             this.sfPtBox5.TabStop = false;
@@ -1098,10 +1068,10 @@ namespace KIOSK
             // sfPtBox6
             // 
             this.sfPtBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sfPtBox6.Location = new System.Drawing.Point(175, 222);
-            this.sfPtBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sfPtBox6.Image = global::KIOSK.Properties.Resources.tea1;
+            this.sfPtBox6.Location = new System.Drawing.Point(136, 166);
             this.sfPtBox6.Name = "sfPtBox6";
-            this.sfPtBox6.Size = new System.Drawing.Size(163, 159);
+            this.sfPtBox6.Size = new System.Drawing.Size(127, 119);
             this.sfPtBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sfPtBox6.TabIndex = 9;
             this.sfPtBox6.TabStop = false;
@@ -1109,10 +1079,10 @@ namespace KIOSK
             // sfPtBox7
             // 
             this.sfPtBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sfPtBox7.Location = new System.Drawing.Point(346, 222);
-            this.sfPtBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sfPtBox7.Image = global::KIOSK.Properties.Resources.tea1;
+            this.sfPtBox7.Location = new System.Drawing.Point(269, 166);
             this.sfPtBox7.Name = "sfPtBox7";
-            this.sfPtBox7.Size = new System.Drawing.Size(163, 159);
+            this.sfPtBox7.Size = new System.Drawing.Size(127, 119);
             this.sfPtBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sfPtBox7.TabIndex = 10;
             this.sfPtBox7.TabStop = false;
@@ -1120,10 +1090,10 @@ namespace KIOSK
             // sfPtBox8
             // 
             this.sfPtBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sfPtBox8.Location = new System.Drawing.Point(517, 222);
-            this.sfPtBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sfPtBox8.Image = global::KIOSK.Properties.Resources.tea1;
+            this.sfPtBox8.Location = new System.Drawing.Point(402, 166);
             this.sfPtBox8.Name = "sfPtBox8";
-            this.sfPtBox8.Size = new System.Drawing.Size(163, 159);
+            this.sfPtBox8.Size = new System.Drawing.Size(127, 119);
             this.sfPtBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sfPtBox8.TabIndex = 11;
             this.sfPtBox8.TabStop = false;
@@ -1131,10 +1101,10 @@ namespace KIOSK
             // sfPtBox9
             // 
             this.sfPtBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sfPtBox9.Location = new System.Drawing.Point(4, 440);
-            this.sfPtBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sfPtBox9.Image = global::KIOSK.Properties.Resources.tea1;
+            this.sfPtBox9.Location = new System.Drawing.Point(3, 329);
             this.sfPtBox9.Name = "sfPtBox9";
-            this.sfPtBox9.Size = new System.Drawing.Size(163, 159);
+            this.sfPtBox9.Size = new System.Drawing.Size(127, 119);
             this.sfPtBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sfPtBox9.TabIndex = 12;
             this.sfPtBox9.TabStop = false;
@@ -1142,10 +1112,10 @@ namespace KIOSK
             // sfPtBox10
             // 
             this.sfPtBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sfPtBox10.Location = new System.Drawing.Point(175, 440);
-            this.sfPtBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sfPtBox10.Image = global::KIOSK.Properties.Resources.tea1;
+            this.sfPtBox10.Location = new System.Drawing.Point(136, 329);
             this.sfPtBox10.Name = "sfPtBox10";
-            this.sfPtBox10.Size = new System.Drawing.Size(163, 159);
+            this.sfPtBox10.Size = new System.Drawing.Size(127, 119);
             this.sfPtBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sfPtBox10.TabIndex = 13;
             this.sfPtBox10.TabStop = false;
@@ -1153,10 +1123,10 @@ namespace KIOSK
             // sfPtBox11
             // 
             this.sfPtBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sfPtBox11.Location = new System.Drawing.Point(346, 440);
-            this.sfPtBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sfPtBox11.Image = global::KIOSK.Properties.Resources.tea1;
+            this.sfPtBox11.Location = new System.Drawing.Point(269, 329);
             this.sfPtBox11.Name = "sfPtBox11";
-            this.sfPtBox11.Size = new System.Drawing.Size(163, 159);
+            this.sfPtBox11.Size = new System.Drawing.Size(127, 119);
             this.sfPtBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sfPtBox11.TabIndex = 14;
             this.sfPtBox11.TabStop = false;
@@ -1164,10 +1134,10 @@ namespace KIOSK
             // sfPtBox12
             // 
             this.sfPtBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sfPtBox12.Location = new System.Drawing.Point(517, 440);
-            this.sfPtBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sfPtBox12.Image = global::KIOSK.Properties.Resources.tea1;
+            this.sfPtBox12.Location = new System.Drawing.Point(402, 329);
             this.sfPtBox12.Name = "sfPtBox12";
-            this.sfPtBox12.Size = new System.Drawing.Size(163, 159);
+            this.sfPtBox12.Size = new System.Drawing.Size(127, 119);
             this.sfPtBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sfPtBox12.TabIndex = 15;
             this.sfPtBox12.TabStop = false;
@@ -1179,10 +1149,9 @@ namespace KIOSK
             this.label25.AutoSize = true;
             this.label25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label25.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label25.Location = new System.Drawing.Point(27, 184);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Location = new System.Drawing.Point(19, 137);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(117, 17);
+            this.label25.Size = new System.Drawing.Size(94, 13);
             this.label25.TabIndex = 16;
             this.label25.Text = "모카 프라푸치노";
             // 
@@ -1192,10 +1161,9 @@ namespace KIOSK
             this.label26.AutoSize = true;
             this.label26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label26.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(190, 184);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Location = new System.Drawing.Point(146, 137);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(132, 17);
+            this.label26.Size = new System.Drawing.Size(106, 13);
             this.label26.TabIndex = 17;
             this.label26.Text = "자바칩 프라푸치노";
             // 
@@ -1205,10 +1173,9 @@ namespace KIOSK
             this.label27.AutoSize = true;
             this.label27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label27.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label27.Location = new System.Drawing.Point(361, 184);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Location = new System.Drawing.Point(279, 137);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(132, 17);
+            this.label27.Size = new System.Drawing.Size(106, 13);
             this.label27.TabIndex = 18;
             this.label27.Text = "초코칩 프라푸치노";
             // 
@@ -1218,10 +1185,9 @@ namespace KIOSK
             this.label28.AutoSize = true;
             this.label28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label28.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label28.Location = new System.Drawing.Point(533, 184);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label28.Location = new System.Drawing.Point(413, 137);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(132, 17);
+            this.label28.Size = new System.Drawing.Size(106, 13);
             this.label28.TabIndex = 19;
             this.label28.Text = "타이거 프라푸치노";
             // 
@@ -1231,10 +1197,9 @@ namespace KIOSK
             this.label29.AutoSize = true;
             this.label29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label29.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label29.Location = new System.Drawing.Point(44, 402);
-            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label29.Location = new System.Drawing.Point(33, 300);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(83, 17);
+            this.label29.Size = new System.Drawing.Size(67, 13);
             this.label29.TabIndex = 20;
             this.label29.Text = "자몽에이드";
             // 
@@ -1244,10 +1209,9 @@ namespace KIOSK
             this.label30.AutoSize = true;
             this.label30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label30.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label30.Location = new System.Drawing.Point(215, 402);
-            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label30.Location = new System.Drawing.Point(166, 300);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(83, 17);
+            this.label30.Size = new System.Drawing.Size(67, 13);
             this.label30.TabIndex = 21;
             this.label30.Text = "자몽에이드";
             // 
@@ -1257,10 +1221,9 @@ namespace KIOSK
             this.label31.AutoSize = true;
             this.label31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label31.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label31.Location = new System.Drawing.Point(386, 402);
-            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label31.Location = new System.Drawing.Point(299, 300);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(83, 17);
+            this.label31.Size = new System.Drawing.Size(67, 13);
             this.label31.TabIndex = 22;
             this.label31.Text = "자몽에이드";
             // 
@@ -1270,20 +1233,18 @@ namespace KIOSK
             this.label32.AutoSize = true;
             this.label32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label32.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label32.Location = new System.Drawing.Point(557, 402);
-            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label32.Location = new System.Drawing.Point(432, 300);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(83, 17);
+            this.label32.Size = new System.Drawing.Size(67, 13);
             this.label32.TabIndex = 23;
             this.label32.Text = "자몽에이드";
             // 
             // tabTea
             // 
             this.tabTea.Controls.Add(this.teaPanel);
-            this.tabTea.Location = new System.Drawing.Point(4, 29);
-            this.tabTea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabTea.Location = new System.Drawing.Point(4, 24);
             this.tabTea.Name = "tabTea";
-            this.tabTea.Size = new System.Drawing.Size(697, 670);
+            this.tabTea.Size = new System.Drawing.Size(540, 499);
             this.tabTea.TabIndex = 2;
             this.tabTea.Text = "티 & 주스";
             this.tabTea.UseVisualStyleBackColor = true;
@@ -1319,8 +1280,7 @@ namespace KIOSK
             this.teaPanel.Controls.Add(this.label42, 1, 3);
             this.teaPanel.Controls.Add(this.label43, 2, 3);
             this.teaPanel.Controls.Add(this.label44, 3, 3);
-            this.teaPanel.Location = new System.Drawing.Point(5, 4);
-            this.teaPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.teaPanel.Location = new System.Drawing.Point(4, 3);
             this.teaPanel.Name = "teaPanel";
             this.teaPanel.RowCount = 6;
             this.teaPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.4902F));
@@ -1329,7 +1289,7 @@ namespace KIOSK
             this.teaPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.843137F));
             this.teaPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.4902F));
             this.teaPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.843137F));
-            this.teaPanel.Size = new System.Drawing.Size(685, 656);
+            this.teaPanel.Size = new System.Drawing.Size(533, 492);
             this.teaPanel.TabIndex = 0;
             // 
             // label48
@@ -1338,10 +1298,9 @@ namespace KIOSK
             this.label48.AutoSize = true;
             this.label48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label48.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label48.Location = new System.Drawing.Point(203, 621);
-            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label48.Location = new System.Drawing.Point(157, 465);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(106, 17);
+            this.label48.Size = new System.Drawing.Size(85, 13);
             this.label48.TabIndex = 39;
             this.label48.Text = "제주 유기 녹차";
             // 
@@ -1351,10 +1310,9 @@ namespace KIOSK
             this.label47.AutoSize = true;
             this.label47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label47.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label47.Location = new System.Drawing.Point(7, 621);
-            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label47.Location = new System.Drawing.Point(4, 465);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(156, 17);
+            this.label47.Size = new System.Drawing.Size(125, 13);
             this.label47.TabIndex = 38;
             this.label47.Text = "자몽 허니 블랙 티 Hot";
             // 
@@ -1364,10 +1322,9 @@ namespace KIOSK
             this.label46.AutoSize = true;
             this.label46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label46.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label46.Location = new System.Drawing.Point(546, 621);
-            this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label46.Location = new System.Drawing.Point(423, 465);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(106, 17);
+            this.label46.Size = new System.Drawing.Size(85, 13);
             this.label46.TabIndex = 37;
             this.label46.Text = "패션 프루트 티";
             // 
@@ -1377,20 +1334,19 @@ namespace KIOSK
             this.label45.AutoSize = true;
             this.label45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label45.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label45.Location = new System.Drawing.Point(352, 621);
-            this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label45.Location = new System.Drawing.Point(272, 465);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(151, 17);
+            this.label45.Size = new System.Drawing.Size(121, 13);
             this.label45.TabIndex = 36;
             this.label45.Text = "캐모마일 블랜디드 티";
             // 
             // teaPtBox1
             // 
             this.teaPtBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox1.Location = new System.Drawing.Point(4, 4);
-            this.teaPtBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.teaPtBox1.Image = global::KIOSK.Properties.Resources.라임_패션_티_removebg_preview;
+            this.teaPtBox1.Location = new System.Drawing.Point(3, 3);
             this.teaPtBox1.Name = "teaPtBox1";
-            this.teaPtBox1.Size = new System.Drawing.Size(163, 159);
+            this.teaPtBox1.Size = new System.Drawing.Size(127, 119);
             this.teaPtBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.teaPtBox1.TabIndex = 16;
             this.teaPtBox1.TabStop = false;
@@ -1398,10 +1354,10 @@ namespace KIOSK
             // teaPtBox2
             // 
             this.teaPtBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox2.Location = new System.Drawing.Point(175, 4);
-            this.teaPtBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.teaPtBox2.Image = global::KIOSK.Properties.Resources.아이스_민트_블렌드_티_removebg_preview;
+            this.teaPtBox2.Location = new System.Drawing.Point(136, 3);
             this.teaPtBox2.Name = "teaPtBox2";
-            this.teaPtBox2.Size = new System.Drawing.Size(163, 159);
+            this.teaPtBox2.Size = new System.Drawing.Size(127, 119);
             this.teaPtBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.teaPtBox2.TabIndex = 17;
             this.teaPtBox2.TabStop = false;
@@ -1409,10 +1365,10 @@ namespace KIOSK
             // teaPtBox3
             // 
             this.teaPtBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox3.Location = new System.Drawing.Point(346, 4);
-            this.teaPtBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.teaPtBox3.Image = global::KIOSK.Properties.Resources.아이스_얼_그레이_티_removebg_preview;
+            this.teaPtBox3.Location = new System.Drawing.Point(269, 3);
             this.teaPtBox3.Name = "teaPtBox3";
-            this.teaPtBox3.Size = new System.Drawing.Size(163, 159);
+            this.teaPtBox3.Size = new System.Drawing.Size(127, 119);
             this.teaPtBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.teaPtBox3.TabIndex = 18;
             this.teaPtBox3.TabStop = false;
@@ -1420,10 +1376,10 @@ namespace KIOSK
             // teaPtBox4
             // 
             this.teaPtBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox4.Location = new System.Drawing.Point(517, 4);
-            this.teaPtBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.teaPtBox4.Image = global::KIOSK.Properties.Resources.아이스_유스베리_티_removebg_preview;
+            this.teaPtBox4.Location = new System.Drawing.Point(402, 3);
             this.teaPtBox4.Name = "teaPtBox4";
-            this.teaPtBox4.Size = new System.Drawing.Size(163, 159);
+            this.teaPtBox4.Size = new System.Drawing.Size(127, 119);
             this.teaPtBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.teaPtBox4.TabIndex = 19;
             this.teaPtBox4.TabStop = false;
@@ -1431,10 +1387,10 @@ namespace KIOSK
             // teaPtBox5
             // 
             this.teaPtBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox5.Location = new System.Drawing.Point(4, 222);
-            this.teaPtBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.teaPtBox5.Image = global::KIOSK.Properties.Resources.아이스_유자_민트_티_removebg_preview;
+            this.teaPtBox5.Location = new System.Drawing.Point(3, 166);
             this.teaPtBox5.Name = "teaPtBox5";
-            this.teaPtBox5.Size = new System.Drawing.Size(163, 159);
+            this.teaPtBox5.Size = new System.Drawing.Size(127, 119);
             this.teaPtBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.teaPtBox5.TabIndex = 20;
             this.teaPtBox5.TabStop = false;
@@ -1442,10 +1398,10 @@ namespace KIOSK
             // teaPtBox6
             // 
             this.teaPtBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox6.Location = new System.Drawing.Point(175, 222);
-            this.teaPtBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.teaPtBox6.Image = global::KIOSK.Properties.Resources.아이스_자몽_허니_블랙_티_removebg_preview;
+            this.teaPtBox6.Location = new System.Drawing.Point(136, 166);
             this.teaPtBox6.Name = "teaPtBox6";
-            this.teaPtBox6.Size = new System.Drawing.Size(163, 159);
+            this.teaPtBox6.Size = new System.Drawing.Size(127, 119);
             this.teaPtBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.teaPtBox6.TabIndex = 21;
             this.teaPtBox6.TabStop = false;
@@ -1453,10 +1409,10 @@ namespace KIOSK
             // teaPtBox7
             // 
             this.teaPtBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox7.Location = new System.Drawing.Point(346, 222);
-            this.teaPtBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.teaPtBox7.Image = global::KIOSK.Properties.Resources.아이스_제주_카멜리아_티_removebg_preview;
+            this.teaPtBox7.Location = new System.Drawing.Point(269, 166);
             this.teaPtBox7.Name = "teaPtBox7";
-            this.teaPtBox7.Size = new System.Drawing.Size(163, 159);
+            this.teaPtBox7.Size = new System.Drawing.Size(127, 119);
             this.teaPtBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.teaPtBox7.TabIndex = 22;
             this.teaPtBox7.TabStop = false;
@@ -1464,10 +1420,10 @@ namespace KIOSK
             // teaPtBox8
             // 
             this.teaPtBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox8.Location = new System.Drawing.Point(517, 222);
-            this.teaPtBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.teaPtBox8.Image = global::KIOSK.Properties.Resources.아이스_푸를_청귤_민트_티_removebg_preview;
+            this.teaPtBox8.Location = new System.Drawing.Point(402, 166);
             this.teaPtBox8.Name = "teaPtBox8";
-            this.teaPtBox8.Size = new System.Drawing.Size(163, 159);
+            this.teaPtBox8.Size = new System.Drawing.Size(127, 119);
             this.teaPtBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.teaPtBox8.TabIndex = 23;
             this.teaPtBox8.TabStop = false;
@@ -1475,10 +1431,10 @@ namespace KIOSK
             // teaPtBox9
             // 
             this.teaPtBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox9.Location = new System.Drawing.Point(4, 440);
-            this.teaPtBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.teaPtBox9.Image = global::KIOSK.Properties.Resources.자몽_허니_블랙_티_removebg_preview__1_;
+            this.teaPtBox9.Location = new System.Drawing.Point(3, 329);
             this.teaPtBox9.Name = "teaPtBox9";
-            this.teaPtBox9.Size = new System.Drawing.Size(163, 159);
+            this.teaPtBox9.Size = new System.Drawing.Size(127, 119);
             this.teaPtBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.teaPtBox9.TabIndex = 24;
             this.teaPtBox9.TabStop = false;
@@ -1486,10 +1442,10 @@ namespace KIOSK
             // teaPtBox10
             // 
             this.teaPtBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox10.Location = new System.Drawing.Point(175, 440);
-            this.teaPtBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.teaPtBox10.Image = global::KIOSK.Properties.Resources.제주_유기_녹차_removebg_preview;
+            this.teaPtBox10.Location = new System.Drawing.Point(136, 329);
             this.teaPtBox10.Name = "teaPtBox10";
-            this.teaPtBox10.Size = new System.Drawing.Size(163, 159);
+            this.teaPtBox10.Size = new System.Drawing.Size(127, 119);
             this.teaPtBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.teaPtBox10.TabIndex = 25;
             this.teaPtBox10.TabStop = false;
@@ -1497,10 +1453,10 @@ namespace KIOSK
             // teaPtBox11
             // 
             this.teaPtBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox11.Location = new System.Drawing.Point(346, 440);
-            this.teaPtBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.teaPtBox11.Image = global::KIOSK.Properties.Resources.캐모마일_블렌드_티_removebg_preview;
+            this.teaPtBox11.Location = new System.Drawing.Point(269, 329);
             this.teaPtBox11.Name = "teaPtBox11";
-            this.teaPtBox11.Size = new System.Drawing.Size(163, 159);
+            this.teaPtBox11.Size = new System.Drawing.Size(127, 119);
             this.teaPtBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.teaPtBox11.TabIndex = 26;
             this.teaPtBox11.TabStop = false;
@@ -1508,10 +1464,10 @@ namespace KIOSK
             // teaPtBox12
             // 
             this.teaPtBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.teaPtBox12.Location = new System.Drawing.Point(517, 440);
-            this.teaPtBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.teaPtBox12.Image = global::KIOSK.Properties.Resources.패션_프루트_티_removebg_preview;
+            this.teaPtBox12.Location = new System.Drawing.Point(402, 329);
             this.teaPtBox12.Name = "teaPtBox12";
-            this.teaPtBox12.Size = new System.Drawing.Size(163, 159);
+            this.teaPtBox12.Size = new System.Drawing.Size(127, 119);
             this.teaPtBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.teaPtBox12.TabIndex = 27;
             this.teaPtBox12.TabStop = false;
@@ -1522,10 +1478,9 @@ namespace KIOSK
             this.label37.AutoSize = true;
             this.label37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label37.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label37.Location = new System.Drawing.Point(40, 184);
-            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label37.Location = new System.Drawing.Point(30, 137);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(91, 17);
+            this.label37.Size = new System.Drawing.Size(73, 13);
             this.label37.TabIndex = 28;
             this.label37.Text = "라임 패션 티";
             // 
@@ -1535,10 +1490,9 @@ namespace KIOSK
             this.label38.AutoSize = true;
             this.label38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label38.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label38.Location = new System.Drawing.Point(196, 184);
-            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label38.Location = new System.Drawing.Point(151, 137);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(121, 17);
+            this.label38.Size = new System.Drawing.Size(97, 13);
             this.label38.TabIndex = 29;
             this.label38.Text = "민트 블렌디드 티";
             // 
@@ -1548,10 +1502,9 @@ namespace KIOSK
             this.label39.AutoSize = true;
             this.label39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label39.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label39.Location = new System.Drawing.Point(384, 184);
-            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label39.Location = new System.Drawing.Point(297, 137);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(87, 17);
+            this.label39.Size = new System.Drawing.Size(70, 13);
             this.label39.TabIndex = 30;
             this.label39.Text = "얼그레이 티";
             // 
@@ -1561,10 +1514,9 @@ namespace KIOSK
             this.label40.AutoSize = true;
             this.label40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label40.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label40.Location = new System.Drawing.Point(555, 184);
-            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label40.Location = new System.Drawing.Point(431, 137);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(87, 17);
+            this.label40.Size = new System.Drawing.Size(70, 13);
             this.label40.TabIndex = 31;
             this.label40.Text = "유스베리 티";
             // 
@@ -1574,10 +1526,9 @@ namespace KIOSK
             this.label41.AutoSize = true;
             this.label41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label41.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label41.Location = new System.Drawing.Point(40, 402);
-            this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label41.Location = new System.Drawing.Point(30, 300);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(91, 17);
+            this.label41.Size = new System.Drawing.Size(73, 13);
             this.label41.TabIndex = 32;
             this.label41.Text = "유자 민트 티";
             // 
@@ -1587,10 +1538,9 @@ namespace KIOSK
             this.label42.AutoSize = true;
             this.label42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label42.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label42.Location = new System.Drawing.Point(194, 402);
-            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label42.Location = new System.Drawing.Point(149, 300);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(125, 17);
+            this.label42.Size = new System.Drawing.Size(100, 13);
             this.label42.TabIndex = 33;
             this.label42.Text = "자몽 허니 블랙 티";
             // 
@@ -1600,10 +1550,9 @@ namespace KIOSK
             this.label43.AutoSize = true;
             this.label43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label43.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label43.Location = new System.Drawing.Point(367, 402);
-            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label43.Location = new System.Drawing.Point(284, 300);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(121, 17);
+            this.label43.Size = new System.Drawing.Size(97, 13);
             this.label43.TabIndex = 34;
             this.label43.Text = "제주 카멜리아 티";
             // 
@@ -1613,19 +1562,17 @@ namespace KIOSK
             this.label44.AutoSize = true;
             this.label44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label44.Font = new System.Drawing.Font("타이포_도담체 L", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label44.Location = new System.Drawing.Point(536, 402);
-            this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label44.Location = new System.Drawing.Point(416, 300);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(125, 17);
+            this.label44.Size = new System.Drawing.Size(100, 13);
             this.label44.TabIndex = 35;
             this.label44.Text = "푸를 청귤 민트 티";
             // 
             // orderBtn
             // 
-            this.orderBtn.Location = new System.Drawing.Point(595, 968);
-            this.orderBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.orderBtn.Location = new System.Drawing.Point(463, 726);
             this.orderBtn.Name = "orderBtn";
-            this.orderBtn.Size = new System.Drawing.Size(138, 85);
+            this.orderBtn.Size = new System.Drawing.Size(107, 64);
             this.orderBtn.TabIndex = 2;
             this.orderBtn.Text = "주문";
             this.orderBtn.UseVisualStyleBackColor = true;
@@ -1636,10 +1583,9 @@ namespace KIOSK
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(725, 4);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(564, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(33, 31);
+            this.button1.Size = new System.Drawing.Size(26, 23);
             this.button1.TabIndex = 3;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
@@ -1649,10 +1595,9 @@ namespace KIOSK
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(171)))), ((int)(((byte)(245)))));
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(-3, -3);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(-2, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(777, 33);
+            this.panel1.Size = new System.Drawing.Size(604, 25);
             this.panel1.TabIndex = 4;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -1661,29 +1606,26 @@ namespace KIOSK
             // 
             this.orderDGView.AllowUserToAddRows = false;
             this.orderDGView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.orderDGView.ColumnHeadersHeight = 29;
+            this.orderDGView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.orderDGView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productName,
             this.price,
-            this.count});
+            this.add,
+            this.count,
+            this.del});
             this.orderDGView.Location = new System.Drawing.Point(22, 621);
             this.orderDGView.Name = "orderDGView";
             this.orderDGView.ReadOnly = true;
             this.orderDGView.RowHeadersVisible = false;
-            this.orderDGView.RowHeadersWidth = 51;
             this.orderDGView.RowTemplate.Height = 25;
-            this.orderDGView.RowTemplate.ReadOnly = true;
-            this.orderDGView.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.orderDGView.Size = new System.Drawing.Size(553, 225);
+            this.orderDGView.Size = new System.Drawing.Size(430, 169);
             this.orderDGView.TabIndex = 5;
-            this.orderDGView.UseWaitCursor = true;
             this.orderDGView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.orderDGView_CellContentClick);
             // 
             // productName
             // 
             this.productName.Frozen = true;
             this.productName.HeaderText = "제품명";
-            this.productName.MinimumWidth = 6;
             this.productName.Name = "productName";
             this.productName.ReadOnly = true;
             this.productName.Width = 227;
@@ -1692,17 +1634,33 @@ namespace KIOSK
             // 
             this.price.Frozen = true;
             this.price.HeaderText = "가격";
-            this.price.MinimumWidth = 6;
             this.price.Name = "price";
-            this.price.Width = 130;
+            this.price.ReadOnly = true;
+            this.price.Width = 80;
+            // 
+            // add
+            // 
+            this.add.Frozen = true;
+            this.add.HeaderText = "";
+            this.add.Name = "add";
+            this.add.ReadOnly = true;
+            this.add.Width = 30;
             // 
             // count
             // 
             this.count.Frozen = true;
             this.count.HeaderText = "갯수";
-            this.count.MinimumWidth = 6;
             this.count.Name = "count";
-            this.count.Width = 70;
+            this.count.ReadOnly = true;
+            this.count.Width = 60;
+            // 
+            // del
+            // 
+            this.del.Frozen = true;
+            this.del.HeaderText = "";
+            this.del.Name = "del";
+            this.del.ReadOnly = true;
+            this.del.Width = 30;
             // 
             // label49
             // 
@@ -1710,20 +1668,18 @@ namespace KIOSK
             this.label49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(171)))), ((int)(((byte)(245)))));
             this.label49.Font = new System.Drawing.Font("메이플스토리", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label49.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label49.Location = new System.Drawing.Point(307, 35);
-            this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label49.Location = new System.Drawing.Point(239, 26);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(177, 52);
+            this.label49.Size = new System.Drawing.Size(141, 41);
             this.label49.TabIndex = 6;
             this.label49.Text = "주문하기";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(171)))), ((int)(((byte)(245)))));
-            this.panel2.Location = new System.Drawing.Point(-3, -3);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(-2, -2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(789, 100);
+            this.panel2.Size = new System.Drawing.Size(614, 75);
             this.panel2.TabIndex = 7;
             // 
             // delBtn
@@ -1747,10 +1703,12 @@ namespace KIOSK
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(600, 820);
+            this.Controls.Add(this.sumPriceLbl);
+            this.Controls.Add(this.delBtn);
             this.Controls.Add(this.label49);
             this.Controls.Add(this.orderDGView);
             this.Controls.Add(this.panel1);
@@ -1758,7 +1716,6 @@ namespace KIOSK
             this.Controls.Add(this.tabCtrl);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form2";
