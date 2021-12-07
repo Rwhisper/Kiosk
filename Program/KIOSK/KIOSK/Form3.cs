@@ -18,7 +18,7 @@ namespace KIOSK
             InitializeComponent();
             _items = items;
         }
-        Database db;
+        DataBase db;
         private void Form3_Load(object sender, EventArgs e)
         {
             int sum=0;
@@ -91,9 +91,10 @@ namespace KIOSK
 
         private void Order()
         {
+            db = new DataBase();
             foreach(var item in _items)
             {
-                db.OrderInsert(item.ItemName, item.Count, 12345678, item.Price);
+                db.OrderInsert(item.ItemName, item.Count, 12345678);
             }
         }
 

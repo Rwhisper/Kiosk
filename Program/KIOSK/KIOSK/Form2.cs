@@ -46,56 +46,56 @@ namespace KIOSK
             items = new List<Item>()
             {
                 new Item { ItemName = "아메리카노", Price = 2500 },
-                new Item { ItemName = "카페라떼", Price = 2500 },
-                new Item { ItemName = "바닐라라떼", Price = 2500 },
-                new Item { ItemName = "에스프레소", Price = 2500 },
-                new Item { ItemName = "돌체 콜드 브루", Price = 2500 },
-                new Item { ItemName = "바닐라 크림 콜드 브루", Price = 2500 },
+                new Item { ItemName = "카페라떼", Price = 3000 },
+                new Item { ItemName = "바닐라라떼", Price = 2800 },
+                new Item { ItemName = "에스프레소", Price = 2800 },
+                new Item { ItemName = "돌체 콜드 브루", Price = 3000 },
+                new Item { ItemName = "바닐라 크림 콜드 브루", Price = 3500 },
                 new Item { ItemName = "돌체 라떼", Price = 2500 },
                 new Item { ItemName = "콜드 브루", Price = 2500 },
-                new Item { ItemName = "카페모카", Price = 2500 },
-                new Item { ItemName = "카푸치노", Price = 2500 },
-                new Item { ItemName = "토피넛 라떼", Price = 2500 },
-                new Item { ItemName = "화이트 초콜릿 모카", Price = 2500 },
+                new Item { ItemName = "카페모카", Price = 3000 },
+                new Item { ItemName = "카푸치노", Price = 2900 },
+                new Item { ItemName = "토피넛 라떼", Price = 3000 },
+                new Item { ItemName = "화이트 초콜릿 모카", Price = 3100 },
 
-                new Item { ItemName = "자몽에이드", Price = 2500 },
+                new Item { ItemName = "자몽에이드", Price = 2300 },
                 new Item { ItemName = "쿨 라임 피지오", Price = 2500 },
-                new Item { ItemName = "민트 초콜릿 블렌디드", Price = 2500 },
-                new Item { ItemName = "피치 레몬 블렌디드", Price = 2500 },
-                new Item { ItemName = "패션 티 레모네이드", Price = 2500 },
-                new Item { ItemName = "블랙 티 레모네이드", Price = 2500 },
-                new Item { ItemName = "딸기 딜라이트 요거트", Price = 2500 },
+                new Item { ItemName = "민트 초콜릿 블렌디드", Price = 3000 },
+                new Item { ItemName = "피치 레몬 블렌디드", Price = 3500 },
+                new Item { ItemName = "패션 티 레모네이드", Price = 3500 },
+                new Item { ItemName = "블랙 티 레모네이드", Price = 2800 },
+                new Item { ItemName = "딸기 딜라이트 요거트", Price = 2700 },
                 new Item { ItemName = "민트 초코칩 블렌디드", Price = 2500 },
-                new Item { ItemName = "자몽에이드", Price = 2500 },
-                new Item { ItemName = "자몽에이드", Price = 2500 },
-                new Item { ItemName = "자몽에이드", Price = 2500 },
-                new Item { ItemName = "자몽에이드", Price = 2500 },
+                new Item { ItemName = "자몽에이드", Price = 2300 },
+                new Item { ItemName = "자몽에이드", Price = 2300 },
+                new Item { ItemName = "자몽에이드", Price = 2300 },
+                new Item { ItemName = "자몽에이드", Price = 2300 },
 
-                new Item { ItemName = "모카 프라푸치노", Price = 2500 },
-                new Item { ItemName = "자바칩 프라푸치노", Price = 2500 },
-                new Item { ItemName = "초코칩 프라푸치노", Price = 2500 },
-                new Item { ItemName = "타이거 프라푸치노", Price = 2500 },
-                new Item { ItemName = "자몽에이드", Price = 2500 },
-                new Item { ItemName = "자몽에이드", Price = 2500 },
-                new Item { ItemName = "자몽에이드", Price = 2500 },
-                new Item { ItemName = "자몽에이드", Price = 2500 },
-                new Item { ItemName = "자몽에이드", Price = 2500 },
-                new Item { ItemName = "자몽에이드", Price = 2500 },
-                new Item { ItemName = "자몽에이드", Price = 2500 },
-                new Item { ItemName = "자몽에이드", Price = 2500 },
+                new Item { ItemName = "모카 프라푸치노", Price = 3000 },
+                new Item { ItemName = "자바칩 프라푸치노", Price = 3500 },
+                new Item { ItemName = "초코칩 프라푸치노", Price = 3300 },
+                new Item { ItemName = "타이거 프라푸치노", Price = 3500 },
+                new Item { ItemName = "자몽에이드", Price = 0 },
+                new Item { ItemName = "자몽에이드", Price = 0 },
+                new Item { ItemName = "자몽에이드", Price = 0 },
+                new Item { ItemName = "자몽에이드", Price = 0 },
+                new Item { ItemName = "자몽에이드", Price = 0 },
+                new Item { ItemName = "자몽에이드", Price = 0 },
+                new Item { ItemName = "자몽에이드", Price = 0 },
+                new Item { ItemName = "자몽에이드", Price = 0 },
 
-                new Item { ItemName = "라임 패션 티", Price = 2500 },
-                new Item { ItemName = "민트 블렌디드 티", Price = 2500 },
-                new Item { ItemName = "얼그레이 티", Price = 2500 },
-                new Item { ItemName = "유스베리 티", Price = 2500 },
+                new Item { ItemName = "라임 패션 티", Price = 3000 },
+                new Item { ItemName = "민트 블렌디드 티", Price = 2800},
+                new Item { ItemName = "얼그레이 티", Price = 3300 },
+                new Item { ItemName = "유스베리 티", Price = 3500 },
                 new Item { ItemName = "유자 민트 티", Price = 2500 },
                 new Item { ItemName = "자몽 허니 블랙 티", Price = 2500 },
-                new Item { ItemName = "제주 카멜리아 티", Price = 2500 },
-                new Item { ItemName = "푸를 청귤 민트 티", Price = 2500 },
-                new Item { ItemName = "자몽 허니 블랙 티 Hot", Price = 2500 },
+                new Item { ItemName = "제주 카멜리아 티", Price = 2800},
+                new Item { ItemName = "푸를 청귤 민트 티", Price = 3500 },
+                new Item { ItemName = "자몽 허니 블랙 티 Hot", Price = 3500},
                 new Item { ItemName = "제주 유기 녹차", Price = 2500 },
-                new Item { ItemName = "캐모마일 블랜디드 티", Price = 2500 },
-                new Item { ItemName = "패션 프루트 티", Price = 2500 },
+                new Item { ItemName = "캐모마일 블랜디드 티", Price = 2800 },
+                new Item { ItemName = "패션 프루트 티", Price = 3000 },
             };
             // 주문할때 넘겨줄 itemList
             itemList = new List<Item>();
@@ -222,6 +222,8 @@ namespace KIOSK
         {
 
         }
+        // 커피
+        #region 커피
         private void coffeePtBox1_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("아메리카노를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -307,11 +309,245 @@ namespace KIOSK
                 SelectItem(12);
             }
         }
+        #endregion
+        // 에이드
+        #region 에이드 & 모히또
+        private void aidPtBox1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("자몽에이드를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(13);
+            }
+        }
 
+        private void aidPtBox2_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("쿨 라임 피지오를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(14);
+            }
+        }
+
+        private void aidPtBox3_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("민트 초콜릿 블렌디드를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(15);
+            }
+        }
+
+        private void aidPtBox4_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("피치 레몬 블렌디드 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(16);
+            }
+        }
+
+        private void aidPtBox5_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("패션 티 레모네이드를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(17);
+            }
+        }
+
+        private void aidPtBox6_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("블랙 티 레모네이드를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(18);
+            }
+        }
+
+        private void aidPtBox7_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("딸기 딜라이트 요거트를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(19);
+            }
+        }
+
+        private void aidPtBox8_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("민트 초코칩 블렌디드를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(20);
+            }
+        }
+        private void aidPtBox9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aidPtBox12_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
+        // 스무디
+        #region 스무디 프라페
+        private void sfPtBox1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("모카 프라푸치노를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(25);
+            }
+        }
+
+        private void sfPtBox2_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("자바칩 프라푸치노를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(26);
+            }
+        }
+
+        private void sfPtBox3_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("초코칩 프라푸치노를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(27);
+            }
+        }
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("타이거 프라푸치노를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(28);
+            }
+        }
+
+        private void sfPtBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sfPtBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sfPtBox8_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void sfPtBox9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sfPtBox10_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void sfPtBox11_Click(object sender, EventArgs e)
+        {
+
+        }
         private void sfPtBox12_Click(object sender, EventArgs e)
         {
 
         }
+        #endregion
+         // 티
+        #region 티
+        private void teaPtBox1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("라임 패션 티를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(37);
+            }
+        }
+
+        private void teaPtBox2_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("민트 블렌디드 티를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(38);
+            }
+        }
+
+        private void teaPtBox3_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("얼그레이 티를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(39);
+            }
+        }
+
+        private void teaPtBox4_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("유스베리 티를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(40);
+            }
+        }
+
+        private void teaPtBox5_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("유자 민트 티를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(41);
+            }
+        }
+
+        private void teaPtBox6_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("자몽 허니 블랙 티를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(42);
+            }
+        }
+
+        private void teaPtBox7_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("자바칩 프라푸치노제주 카멜리아 티를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(43);
+            }
+        }
+
+        private void teaPtBox8_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("푸를 청귤 민트 티를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(44);
+            }
+        }
+
+        private void teaPtBox9_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("자몽 허니 블랙티(Hot)를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(45);
+            }
+        }
+
+        private void teaPtBox10_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("제주 유기 녹차 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(46);
+            }
+        }
+
+        private void teaPtBox11_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("캐모마일 블랜디드 티를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(47);
+            }
+        }
+
+        private void teaPtBox12_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("패션 프루트 티를 주문하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                SelectItem(48);
+            }
+        }
+        #endregion
 
         private void SumPriceInsert()
         {
@@ -362,11 +598,7 @@ namespace KIOSK
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -391,5 +623,79 @@ namespace KIOSK
 
 
         }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+     
+
+       
+
+        private void label31_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label32_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label27_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label43_Click(object sender, EventArgs e)
+        {
+
+        }
+
+ 
+
+      
+
+        private void tabTea_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

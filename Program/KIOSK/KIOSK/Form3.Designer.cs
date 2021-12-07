@@ -78,12 +78,13 @@ namespace KIOSK
             // 
             // backBtn
             // 
-            this.backBtn.BackColor = System.Drawing.Color.White;
-            this.backBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.backBtn.BackColor = System.Drawing.Color.Fuchsia;
+            this.backBtn.FlatAppearance.BorderColor = System.Drawing.Color.Indigo;
             this.backBtn.FlatAppearance.BorderSize = 0;
-            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.backBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.backBtn.Location = new System.Drawing.Point(70, 551);
+            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backBtn.Font = new System.Drawing.Font("메이플스토리", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.backBtn.ForeColor = System.Drawing.Color.Lavender;
+            this.backBtn.Location = new System.Drawing.Point(70, 598);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(199, 96);
             this.backBtn.TabIndex = 6;
@@ -95,7 +96,7 @@ namespace KIOSK
             // 
             this.storeRButton.AutoSize = true;
             this.storeRButton.Enabled = false;
-            this.storeRButton.Location = new System.Drawing.Point(158, 489);
+            this.storeRButton.Location = new System.Drawing.Point(153, 542);
             this.storeRButton.Name = "storeRButton";
             this.storeRButton.Size = new System.Drawing.Size(49, 19);
             this.storeRButton.TabIndex = 7;
@@ -108,7 +109,7 @@ namespace KIOSK
             // 
             this.packRButton.AutoSize = true;
             this.packRButton.Enabled = false;
-            this.packRButton.Location = new System.Drawing.Point(357, 489);
+            this.packRButton.Location = new System.Drawing.Point(398, 542);
             this.packRButton.Name = "packRButton";
             this.packRButton.Size = new System.Drawing.Size(49, 19);
             this.packRButton.TabIndex = 8;
@@ -118,22 +119,32 @@ namespace KIOSK
             // 
             // storeButton
             // 
-            this.storeButton.Location = new System.Drawing.Point(120, 449);
+            this.storeButton.BackColor = System.Drawing.Color.BlueViolet;
+            this.storeButton.FlatAppearance.BorderColor = System.Drawing.Color.BlueViolet;
+            this.storeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.storeButton.Font = new System.Drawing.Font("메이플스토리", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.storeButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.storeButton.Location = new System.Drawing.Point(70, 462);
             this.storeButton.Name = "storeButton";
-            this.storeButton.Size = new System.Drawing.Size(122, 23);
+            this.storeButton.Size = new System.Drawing.Size(199, 74);
             this.storeButton.TabIndex = 9;
-            this.storeButton.Text = "매장에서 먹을게요";
-            this.storeButton.UseVisualStyleBackColor = true;
+            this.storeButton.Text = "매장에서 식사";
+            this.storeButton.UseVisualStyleBackColor = false;
             this.storeButton.Click += new System.EventHandler(this.storeButton_Click);
             // 
             // packButton
             // 
-            this.packButton.Location = new System.Drawing.Point(326, 449);
+            this.packButton.BackColor = System.Drawing.Color.BlueViolet;
+            this.packButton.FlatAppearance.BorderColor = System.Drawing.Color.BlueViolet;
+            this.packButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.packButton.Font = new System.Drawing.Font("메이플스토리", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.packButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.packButton.Location = new System.Drawing.Point(326, 462);
             this.packButton.Name = "packButton";
-            this.packButton.Size = new System.Drawing.Size(118, 23);
+            this.packButton.Size = new System.Drawing.Size(199, 74);
             this.packButton.TabIndex = 10;
-            this.packButton.Text = "포장 해갈게요";
-            this.packButton.UseVisualStyleBackColor = true;
+            this.packButton.Text = "포장";
+            this.packButton.UseVisualStyleBackColor = false;
             this.packButton.Click += new System.EventHandler(this.packButton_Click);
             // 
             // fileSystemWatcher1
@@ -150,9 +161,11 @@ namespace KIOSK
             // sumPriceLbl
             // 
             this.sumPriceLbl.AutoSize = true;
-            this.sumPriceLbl.Location = new System.Drawing.Point(120, 422);
+            this.sumPriceLbl.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.sumPriceLbl.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.sumPriceLbl.Location = new System.Drawing.Point(70, 408);
             this.sumPriceLbl.Name = "sumPriceLbl";
-            this.sumPriceLbl.Size = new System.Drawing.Size(58, 15);
+            this.sumPriceLbl.Size = new System.Drawing.Size(132, 37);
             this.sumPriceLbl.TabIndex = 11;
             this.sumPriceLbl.Text = "총 금액 : ";
             this.sumPriceLbl.Click += new System.EventHandler(this.sumPriceLbl_Click);
@@ -164,6 +177,7 @@ namespace KIOSK
             // orderGridView2
             // 
             this.orderGridView2.AllowUserToAddRows = false;
+            this.orderGridView2.BackgroundColor = System.Drawing.Color.White;
             this.orderGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ItemName,
             this.Price,
@@ -203,13 +217,17 @@ namespace KIOSK
             // 
             // paymentBtn
             // 
-            this.paymentBtn.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.paymentBtn.Location = new System.Drawing.Point(326, 551);
+            this.paymentBtn.BackColor = System.Drawing.Color.Purple;
+            this.paymentBtn.FlatAppearance.BorderSize = 0;
+            this.paymentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.paymentBtn.Font = new System.Drawing.Font("메이플스토리", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.paymentBtn.ForeColor = System.Drawing.Color.White;
+            this.paymentBtn.Location = new System.Drawing.Point(326, 598);
             this.paymentBtn.Name = "paymentBtn";
             this.paymentBtn.Size = new System.Drawing.Size(199, 96);
             this.paymentBtn.TabIndex = 14;
             this.paymentBtn.Text = "결제";
-            this.paymentBtn.UseVisualStyleBackColor = true;
+            this.paymentBtn.UseVisualStyleBackColor = false;
             this.paymentBtn.Click += new System.EventHandler(this.paymentBtn_Click);
             // 
             // label1
