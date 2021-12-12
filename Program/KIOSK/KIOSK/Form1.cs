@@ -12,6 +12,10 @@ namespace KIOSK
 {
     public partial class Form1 : Form
     {
+        public static string IPAddr { get; set; }
+        public static Session session;
+
+
         public Form1() 
         {
             InitializeComponent();
@@ -21,10 +25,19 @@ namespace KIOSK
         {
             this.Close();
         }
-
+        Form4 form4;
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
+            form4 = new Form4();
+            this.Hide();
+            if (session ==  null)
+            {
+                session = new Session();
+                form4.ShowDialog();
+            }
+            
+            
         }
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)

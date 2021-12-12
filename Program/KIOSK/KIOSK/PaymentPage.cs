@@ -54,10 +54,10 @@ namespace KIOSK
 
                 if (MessageBox.Show("영수증을 출력하시겟습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    
+                    this.Close();
                 }
 
-                this.Close();
+               
             }
         }
     }

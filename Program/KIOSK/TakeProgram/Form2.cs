@@ -18,11 +18,8 @@ namespace TakeProgram
             InitializeComponent();
         }
         List<Order> _orderList;
-        public Form2(List<Order> orderList)
-        {
-            _orderList = orderList;
-            InitializeComponent();
-        }
+        public List<Order> orderLsit { get { return _orderList; } set { _orderList = value; } }
+        public int cnt { get; set; }
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -31,17 +28,16 @@ namespace TakeProgram
             {                
                 foreach(var order in _orderList)
                 {
-                    takeGdView.Rows.Add(order.No, order.ItemName, order.Price, order.Count);
-                    sumPrice += order.Count;
+                    takeGdView.Rows.Add(cnt, order.ItemName, order.Price, order.Count);
+                    sumPrice += order.Price;
                 }
             }
-            sumPriceLbl.Text = sumPrice.ToString();
+            sumPriceLbl.Text = "총금액 : " + sumPrice.ToString();
         }
 
         private void OkBtn_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
+           
             this.Close();
         }
 
