@@ -22,7 +22,7 @@ namespace KIOSK
             InitializeComponent();
             _items = items;
         }
-        DataBase db;
+   
         private void Form3_Load(object sender, EventArgs e)
         {
             int sum=0;
@@ -101,28 +101,26 @@ namespace KIOSK
             this.Close();
         }
 
-        private void Order()
-        {
-            db = new DataBase();
-            foreach(var item in _items)
-            {
-                db.OrderInsert(item.ItemName, item.Count, 12345678);
-            }            
-        }
+  
 
-        private void SendOrder()
+        private void SendOrder(int _take, string card_code)
         {
+            orderListpkt.take = _take;
+            for(int i = 0; i < orderListpkt.orders.Count; i++)
+            {
+                orderListpkt.orders[i].CardCode = card_code;
+            }           
             Form1.session.Send(orderListpkt.Write());
         }
         private void paymentBtn_Click(object sender, EventArgs e)
         {
             if(storeRButton.Checked == true)
             {                
-                Order();
+                //Order();
                 PaymentPage payment = new PaymentPage();
                 payment.ShowDialog();
                 this.Hide();
-                SendOrder();
+                SendOrder(1, "1234-4567-1234-0000");
 
                 Form1 form1 = new Form1();
                 form1.ShowDialog();
@@ -131,11 +129,11 @@ namespace KIOSK
             }
             else if (packRButton.Checked == true)
             {
-                Order();
+                //Order();
                 PaymentPage payment = new PaymentPage();
                 payment.ShowDialog();
                 this.Hide();
-                SendOrder();
+                SendOrder(2, "1234-4567-1234-0000");
 
                 Form1 form1 = new Form1();
                 form1.ShowDialog();

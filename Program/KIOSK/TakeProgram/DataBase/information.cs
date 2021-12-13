@@ -8,7 +8,7 @@ namespace TakeProgram
     {
         public int Pay_num { get; set; }
         public string Pro_Code { get; set; }
-        public int Pay_card { get; set; }
+        public string Pay_card { get; set; }
         public int Count { get; set; }
         public string Date { get; set; }
 

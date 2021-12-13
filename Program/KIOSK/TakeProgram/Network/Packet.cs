@@ -18,6 +18,7 @@ public interface IPacket
 }
 public class C_OrderList : IPacket
 {
+	public int take;
 	public List<Order> orders = new List<Order>();
 	public ushort Protocol { get { return (ushort)PacketID.OrderList; } }
 
@@ -26,6 +27,8 @@ public class C_OrderList : IPacket
 		ushort count = 0;
 		count += sizeof(ushort);
 		count += sizeof(ushort);
+		this.take = BitConverter.ToInt32(segment.Array, segment.Offset + count);
+		count += sizeof(int);
 		this.orders.Clear();
 		ushort orderLen = BitConverter.ToUInt16(segment.Array, segment.Offset + count);
 		count += sizeof(ushort);
@@ -43,12 +46,14 @@ public class C_OrderList : IPacket
 		ushort count = 0;
 
 		count += sizeof(ushort);
+		Array.Copy(BitConverter.GetBytes(count), 0, segment.Array, segment.Offset + count, sizeof(int));
+		count += sizeof(int);
 		Array.Copy(BitConverter.GetBytes((ushort)PacketID.OrderList), 0, segment.Array, segment.Offset + count, sizeof(ushort));
 		count += sizeof(ushort);
 		Array.Copy(BitConverter.GetBytes((ushort)this.orders.Count), 0, segment.Array, segment.Offset + count, sizeof(ushort));
 		count += sizeof(ushort);
-		foreach (Order room in this.orders)
-			room.Write(segment, ref count);
+		foreach (Order order in this.orders)
+			order.Write(segment, ref count);
 
 		Array.Copy(BitConverter.GetBytes(count), 0, segment.Array, segment.Offset, sizeof(ushort));
 

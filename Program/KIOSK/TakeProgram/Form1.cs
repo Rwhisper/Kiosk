@@ -32,14 +32,14 @@ namespace TakeProgram
         {
             IPAddress[] ipaddr = Dns.GetHostEntry(Dns.GetHostName()).AddressList;
             Iplbl.Text = "아이피 : " + ipaddr[1].ToString();
-
+            
+            db = new DataBase();
             RefreshPaymentList();
 
         }
 
         private void RefreshPaymentList()
         {
-            db = new DataBase();
             List<Payment> payments = db.GetPayment();
             foreach (var payment in payments)
             {
@@ -78,6 +78,7 @@ namespace TakeProgram
                     // - 여기서 블럭이 걸려야 하지만 스레드로 따로 뺏기때문에 다른 작업이가능        
                     clientSocket = listenSocket.Accept();
                     listenCnt++;
+                    MessageBox.Show("1");
                     this.listenLbl.Invoke((MethodInvoker)delegate
                     {
                         listenLbl.Text = listenCnt + "대 접속 중";
@@ -86,10 +87,12 @@ namespace TakeProgram
                     recevieThread = new Thread(new ThreadStart(Receive));
                     recevieThread.IsBackground = true;
                     recevieThread.Start(); //Receive() 호출
+                    
+
                 }
                 catch (Exception e)
                 {
-                 
+                    MessageBox.Show(e.StackTrace);
                 }
                 
             }
@@ -122,15 +125,22 @@ namespace TakeProgram
                 try
                 {
                     clientSocket.Receive(receiveBuffer, receiveBuffer.Length, SocketFlags.None);
-                    RefreshPaymentList();
-
                     form2 = new Form2();
                     form2.cnt = this.cnt;
-                    form2.orderLsit = OnRecvPacekt(receiveBuffer).orders;
+                    C_OrderList pkt = OnRecvPacekt(receiveBuffer);
+                    form2.orderLsit = pkt.orders;
+                    form2.take = pkt.take;
+                    foreach (var item in form2.orderLsit)
+                    {
+                        MessageBox.Show(item.ItemName + item.Count.ToString() + item.CardCode);
+                        db.OrderInsert(item.ItemName, item.Count, item.CardCode);
+                    }
+                    RefreshPaymentList();
                     form2.ShowDialog();
                 }
                 catch (Exception e)
                 {
+                    MessageBox.Show(e.StackTrace);
                     //clientSocket.Shutdown(SocketShutdown.Both);
                     clientSocket.Close();
                     listenCnt--;
@@ -157,6 +167,8 @@ namespace TakeProgram
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.button1.Enabled = false;
+            this.button1.Text = "연결 중";
             listenThread = new Thread(new ThreadStart(Listen));
             listenThread.IsBackground = true;
             listenThread.Start(); //Receive() 호출
@@ -165,71 +177,12 @@ namespace TakeProgram
 
         }
 
-        static async Task RunServer(int port)
-        {
-            // Socket EndPoint 설정(서버의 경우는 Any로 설정하고 포트 번호만 설정한다.)
-            var ipep = new IPEndPoint(IPAddress.Any, port);
-            // 소켓 인스턴스 생성
-            using (Socket server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
-            {
-                // 서버 소켓에 EndPoint 설정
-                server.Bind(ipep);
-                // 클라이언트 소켓 대기 버퍼
-                server.Listen(20);
-                // 콘솔 출력
-                Console.WriteLine($"Server Start... Listen port {ipep.Port}...");
-                // server Accept를 Task로 병렬 처리(즉, 비동기를 만든다.)
-                var task = new Task(() =>
-                {
-                    // 무한 루프
-                    while (true)
-                    {
-                        // 클라이언트로부터 접속 대기
-                        var client = server.Accept();
-                        // 접속이 되면 Task로 병렬 처리
-                        new Task(() =>
-                        {
-                            // 클라이언트 EndPoint 정보 취득
-                            var ip = client.RemoteEndPoint as IPEndPoint;
-                            // 콘솔 출력 - 접속 ip와 접속 시간
-                            Console.WriteLine($"Client : (From: {ip.Address.ToString()}:{ip.Port}, Connection time: {DateTime.Now})");
-                            // 클라이언트로 접속 메시지를 byte로 변환하여 송신
-                            //client.Send(Encoding.ASCII.GetBytes("Welcome server!\r\n>"));
-                            // 메시지 버퍼
-                            var sb = new StringBuilder();
-                            // 종료되면 자동 client 종료
-                            using (client)
-                            {
-                                // 무한 루프
-                                while (true)
-                                {
-                                    // 통신 바이너리 버퍼
-                                    var binary = new Byte[1024];
-                                    // 클라이언트로부터 메시지 대기
-                                    client.Receive(binary);
-                                    // 클라이언트로 받은 메시지를 String으로 변환
-                                    Form2 form2 = new Form2();
-                                    form2.orderLsit = OnRecvPacekt(binary).orders;
-
-                                    form2.ShowDialog();
-                                }  
-                            }
-                            // Task 실행
-                        }).Start();
-                    }
-                });
-                // Task 실행
-                task.Start();
-                // 대기
-                await task;
-            }
-        }
+  
 
         private void listenLbl_Click(object sender, EventArgs e)
         {
-            button2.Visible = true;
+         
         }
-        bool isvisi = false;
         private void button2_Click(object sender, EventArgs e)
         {
             

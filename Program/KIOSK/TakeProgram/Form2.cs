@@ -17,6 +17,7 @@ namespace TakeProgram
             
             InitializeComponent();
         }
+        public int take;
         List<Order> _orderList;
         public List<Order> orderLsit { get { return _orderList; } set { _orderList = value; } }
         public int cnt { get; set; }
@@ -31,7 +32,17 @@ namespace TakeProgram
                     takeGdView.Rows.Add(cnt, order.ItemName, order.Price, order.Count);
                     sumPrice += order.Price;
                 }
+                
             }
+            if(take == 1)
+            {
+                takeLbl.Text = "포장";
+            }
+            else
+            {
+                takeLbl.Text = "매장";
+            }
+
             sumPriceLbl.Text = "총금액 : " + sumPrice.ToString();
         }
 

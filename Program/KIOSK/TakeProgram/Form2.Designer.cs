@@ -39,6 +39,7 @@ namespace TakeProgram
             this.countCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sumPriceLbl = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.takeLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.takeGdView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +49,7 @@ namespace TakeProgram
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(210)))), ((int)(((byte)(250)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(138, 28);
+            this.label1.Location = new System.Drawing.Point(166, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(233, 36);
@@ -126,12 +127,24 @@ namespace TakeProgram
             this.sumPriceLbl.TabIndex = 3;
             this.sumPriceLbl.Text = "총 금액 : 00000";
             // 
+            // takeLbl
+            // 
+            this.takeLbl.AutoSize = true;
+            this.takeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.takeLbl.ForeColor = System.Drawing.Color.Indigo;
+            this.takeLbl.Location = new System.Drawing.Point(106, 26);
+            this.takeLbl.Name = "takeLbl";
+            this.takeLbl.Size = new System.Drawing.Size(65, 36);
+            this.takeLbl.TabIndex = 4;
+            this.takeLbl.Text = "포장";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(210)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(493, 380);
+            this.Controls.Add(this.takeLbl);
             this.Controls.Add(this.sumPriceLbl);
             this.Controls.Add(this.takeGdView);
             this.Controls.Add(this.OkBtn);
@@ -158,5 +171,6 @@ namespace TakeProgram
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemNameCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn countCol;
+        private System.Windows.Forms.Label takeLbl;
     }
 }
