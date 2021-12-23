@@ -78,7 +78,6 @@ namespace TakeProgram
                     // - 여기서 블럭이 걸려야 하지만 스레드로 따로 뺏기때문에 다른 작업이가능        
                     clientSocket = listenSocket.Accept();
                     listenCnt++;
-                    MessageBox.Show("1");
                     this.listenLbl.Invoke((MethodInvoker)delegate
                     {
                         listenLbl.Text = listenCnt + "대 접속 중";
@@ -92,7 +91,7 @@ namespace TakeProgram
                 }
                 catch (Exception e)
                 {
-                    MessageBox.Show(e.StackTrace);
+                    //MessageBox.Show(e.StackTrace);
                 }
                 
             }
@@ -132,7 +131,6 @@ namespace TakeProgram
                     form2.take = pkt.take;
                     foreach (var item in form2.orderLsit)
                     {
-                        MessageBox.Show(item.ItemName + item.Count.ToString() + item.CardCode);
                         db.OrderInsert(item.ItemName, item.Count, item.CardCode);
                     }
                     RefreshPaymentList();
@@ -140,7 +138,6 @@ namespace TakeProgram
                 }
                 catch (Exception e)
                 {
-                    MessageBox.Show(e.StackTrace);
                     //clientSocket.Shutdown(SocketShutdown.Both);
                     clientSocket.Close();
                     listenCnt--;

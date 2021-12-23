@@ -12,9 +12,7 @@ namespace KIOSK
 {
     public partial class Form1 : Form
     {
-        public static string IPAddr { get; set; }
         public static Session session;
-
 
         public Form1() 
         {
